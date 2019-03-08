@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手游交易平台注册页</title>
+    <link rel="stylesheet" type="text/css" href="../答辩/css3.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/regisyer1.js"></script>
+</head>
+<body>
+    <div class="header">
+        <!--头部-->
+        <div class="header1">
+            <!--返回首页面链接-->
+            <div class="btn">
+                <a class="btn_home" href="#">返回首页</a>
+            </div>
+            <div class="header2">
+                <h1 class="logo">
+                    <a id="logo1" href="#">
+                        <img src="//usercenter.9game.cn/user_center/sso/public/images/next/zh/pc/logo_uc_835043c.gif?force-show=1" title="UC优视" class="logo2" client_id="94" staticresourcebaseuri="/" appname="交易猫" width="174" height="72">
+                    </a>
+                </h1>
+            </div>
+            <div class="header3">
+                账号是UC各业务通行的账号。
+                <br>
+                拥有账号，你就可以玩转UC！
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="menu">
+            <div class="menu1">
+                <li class="menu2">
+                    <div class="reg">
+                        <img src="//usercenter.9game.cn/user_center/sso/public/images/next/zh/pc/mobile_s_171bc37.gif?force-show=1">
+                        手机注册
+                    </div>
+                </li>
+            </div>
+        </div>
+        <!--左边菜单end-->
+        <div class="cont">
+            <!--登录链接提示-->
+            <div class="tip">
+                提示：如果你已有账号，请直接
+                <a href="#">登录</a>
+            </div>
+            <!--通用错误-->
+            <div id="dMessageError" style="padding: 0px 0px 15px 78px"></div>
+            <!--表单-->
+            <form class="form" action="" method="post">
+                <div class="form-group">
+					 <label for="username">注册账户：</label><span class="error_tip">提示信息</span>
+					 <input name="username" class="form-control" id="username" placeholder="注册账户">
+				</div>
+                <div class="form-group">
+					<label for="password1">密码：</label><span class="error_tip">提示信息</span>
+					<input name="password1" type="password" class="form-control" id="password1" placeholder="密码">
+				</div>
+                <div class="form-group">
+					<label for="password2">重复密码：</label><span class="error_tip">提示信息</span>
+					<input name="password2" type="password" class="form-control" id="password2" placeholder="重复密码">
+				</div>
+				<div class="form-group">
+					<label for="email">邮箱：</label><span class="error_tip">提示信息</span>
+					<input name="email" type="text" class="form-control" id="email" placeholder="邮箱">
+				</div>
+				<div class="form-group">
+					<input type="checkbox" name="allow" id="allow" checked="checked">
+					<label>同意“别克汇用户使用协议”</label>
+					<span class="error_tip2">提示信息</span>
+				</div>
+
+				<button type="submit" class="btn1 btn-default center-block">注册</button>
+            </form>
+            <div class="gd">
+                <div id="dFooter" class="footer1">
+                    <p>
+                        <a href="#" target="_blank">UC官网</a>
+                        |
+                        <a href="#" target="_blank">UC产品</a>
+                        |
+                        <a href="#" target="_blank">帮助中心</a>
+                        |
+                        <a href="#" target="_blank">意见反馈</a>
+                    </p>
+                    <p>UC优视　2009-2016 © 版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

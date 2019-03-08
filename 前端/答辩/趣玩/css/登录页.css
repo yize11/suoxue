@@ -1,0 +1,183 @@
+*{
+	margin: 0px ;
+	padding: 0px;
+}
+.zhu{
+	width: 1000px;
+	height: 760px;
+	background-color: rgb(143, 140, 127);
+	margin: 0 auto;
+	
+	
+}
+.box1{
+	width: 500px;
+	height: 400px;
+	background-color: white;
+	margin-left: 250px;
+	position: absolute;
+	top: 130px;
+}
+.box2{
+	width: 500px;
+	height: 50px;
+	background-color: white;
+	border-bottom: 1px solid #dadbd9;
+
+}
+.H4{
+	padding-top: 10px;
+	padding-left: 10px;
+}
+/*.modal_box_close {
+    display: block;
+    float: right;
+    width: 19px;
+    background: url(img/icons.png);
+}*/
+.box2 a{
+	margin-left: 480px;
+	position: relative;
+	top: -25px;
+	left: -10px;
+}
+.box3{
+	width: 500px;
+	height: 130px;
+	background-color: white;
+	border-bottom: 1px solid #dadbd9;
+}
+#p1{
+	font-size: 14px;
+	margin-left: 35px;
+	color: #999;
+}
+.box3 li{
+	float: right;
+	margin: 5px;
+}
+.box3 ul{
+	margin-right: 35px;
+	list-style-type: none;
+}
+#p2{
+	margin-top: 60px;
+	margin-left: 33px;
+	color: #999;
+}
+#p3{
+	margin-left: 240px;
+	position: relative;
+	top: -21px;
+	text-decoration: none;
+	color: #999;
+	font-weight: bold;
+}
+#p3:hover{
+	text-decoration: underline;
+}
+#p4{
+	margin-left: 288px;
+	color: #999;
+	text-decoration: none;
+	position: relative;
+	top: -42px;
+	font-weight: bold;
+}
+#p4:hover{
+	text-decoration: underline;
+}
+#p5{
+	margin-left: 355px;
+	color: #999;
+	text-decoration: none;
+	position: relative;
+	top: -62px;
+	font-weight: bold;
+}
+#p5:hover{
+	text-decoration: underline;
+}
+.box4{
+	width: 500px;
+	height: 215px;
+	background-color: white;
+}
+#p6{
+	margin-left: 33px;
+	padding-top: 15px;
+	color: #999;
+
+}
+#p7{
+	margin-left: 33px;
+	padding-top: 15px;
+	color: #999;
+}
+.txt{
+	width: 350px;
+	height: 30px;
+	margin-left: 90px;
+	position: relative;
+	top: -26px;
+	color: #999;
+}
+#p8{
+	margin-left: 33px;
+	padding-top: 1px;
+	color: #999;
+}
+.txt2{
+	width: 350px;
+	height: 30px;
+	margin-left: 90px;
+	position: relative;
+	top: -26px;
+	color: #999;
+}
+.box5{
+	width: 115px;
+	height: 35px;
+	background-color: black;
+	margin-left: 90px;
+}
+.box5 p{
+	color: #999;
+	text-align: center;
+	padding-top: 5px;
+}
+.box6{
+	width: 115px;
+	height: 35px;
+	background-color: rgb(143, 140, 127);
+	margin-left: 220px;
+	margin-top: -35px;
+
+}
+.box6:hover{
+	background-color: black;
+}
+.box6 p:hover{
+	text-align: none;
+}
+.box6 p{
+	color: #999;
+	text-align: center;
+	padding-top: 5px;
+}
+.box4 a{
+	text-decoration: none;
+}
+#p9{
+	margin-left: 385px;
+	font-size: 13px;
+	position: relative;
+	top: -30px;
+}
+a#p9:hover{
+	text-decoration: underline;
+}
+.sale label{
+	margin-top: 10px;
+}
+	

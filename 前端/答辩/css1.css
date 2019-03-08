@@ -1,0 +1,1935 @@
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .header{
+            width: 1307px;
+            height: 152px;
+            background-color:#fff;
+        }
+        .header2{
+            width: 100%;
+            height: 36px;
+            background: #48484c;
+        }
+        .header2 ul{
+            list-style: none;
+        }
+        .header3{
+            width: 1000px;
+            height: 36px;
+            background: #48484c;
+            margin: 0 auto;
+        }
+        .c li{
+            float: left;
+            width: 111px;
+            position: relative;
+
+
+
+        }
+        .c li a{
+            border-bottom: 3px solid #489eff;
+            line-height: 33px;
+            height: 33px;
+            font-weight: 700;
+            background: #272729;
+            float: left;
+        }
+
+        .header3 li a{
+            font-family: "\5FAE\8F6F\96C5\9ED1";
+            display: block;
+            width: 111px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .b{
+            width: 1000px;
+            height: 80px;
+            background-color: #fff;
+            margin: auto;
+        }
+        .b1{
+            width:283px;
+            overflow:hidden;
+            height: 44px;
+            background: url("css.png/logo.png")no-repeat;
+            position: absolute;
+            margin:18px 0 0 10px;
+        }
+        .b2{
+            width: 534px;
+            height: 31px;
+            border: 2px solid #4d92e0;
+            overflow: hidden;
+            float: right;
+            margin-top:25px ;
+        }
+       li .b5{
+            width: 62px;
+            padding: 3px 0 6px;
+            background-color: #4190e9;
+            line-height:1.5 ;
+            color: #fff;
+            border: 0;
+           float: right;
+        }
+       li .b6{
+           width: 470px;
+           border: 1px solid #e0e0e0;
+           background: #fff;
+           line-height: 16px;
+           padding-top: 6px;
+           padding-bottom: 17px;
+           vertical-align: middle;
+           font-size: 100%;
+           outline: 0;
+           margin-top: 0;
+           margin-left: 0;
+       }
+        .header1{
+            width: 1000px;
+            height: 36px;
+            background-color:  #fff;
+            margin: auto;
+        }
+        .dnb{
+            float: left;
+            width: 87px;
+            height: 36px;
+            line-height: 36px;
+            color: #333333;
+            font-size: 12px;
+        }
+        .sjb{
+            height: 36px;
+            color: #333333;
+            text-decoration: none;
+        }
+         .dnb a:hover{
+            text-decoration: underline;
+            color: #ff8400;
+        }
+        .a1{
+            width: 457px;
+            height: 36px;
+            line-height: 36px;
+            float: right;
+        }
+        .a1 span{
+            font-size: 12px;
+        }
+        .a1 a{
+            font-size: 12px;
+            color: #333333;
+            text-decoration: none;
+        }
+        .a1 a:hover{
+            color: #ff8400;
+            text-decoration: underline;
+        }
+        .zb{
+            width: 1000px;
+            height: 1776px;
+            margin: 0 auto;
+        }
+        .game{
+            border: 1px solid #d7d7d7;
+            padding: 4px 33px 4px 79px;
+            margin-bottom: 10px;
+            color: #333;
+            font: 12px/18px arial,"\5B8B\4F53";
+        }
+        .game .game1{
+            margin: 0;
+            padding: 16px 0;
+            border-bottom: 1px #d7d7d7 dashed;
+            position: relative;
+            line-height: 1;
+            color: #333;
+        }
+        /*热门*/
+        .game .game2{
+            background-position: 0 -1324px;
+            display: block;
+            width: 55px;
+            height: 33px;
+            line-height: 33px;
+            position: absolute;
+            left: -79px;
+            top: 7px;
+            background-image:url(css.png/log.png);
+            background-repeat: no-repeat;
+            color: #fff;
+            text-indent: 10px;
+        }
+        .game a{
+            display: inline-block;
+            padding: 0 15px;
+            border-left:1px #d7d7d7 solid;
+            text-decoration: none;
+            color: #333;
+        }
+        .game3 .game4{
+            margin: 0;
+            padding: 16px 0;
+            border-bottom: 1px #d7d7d7 dashed;
+            position: relative;
+        }
+        /*最新*/
+        .game3 .game4 .game5{
+            background-position: 0 -1357px;
+            display: block;
+            width: 55px;
+            height: 33px;
+            line-height: 33px;
+            position: absolute;
+            left: -79px;
+            top: 7px;
+            background-image:url(css.png/log.png);
+            background-repeat: no-repeat;
+            color: #fff;
+            text-indent: 10px;
+        }
+        .game3{
+            border: 1px solid #d7d7d7;
+            padding: 4px 33px 4px 79px;
+            margin-bottom: 10px;
+            color: #333;
+            font: 12px/18px arial,"\5B8B\4F53";
+        }
+        .game3 a{
+            display: inline-block;
+            padding: 0 15px;
+            border-left:1px #d7d7d7 solid;
+            text-decoration: none;
+            color: #333;
+        }
+        a:hover {
+            color: #ff8400;
+            text-decoration: underline;
+        }
+        /*左*/
+        .zb .z{
+            width: 220px;
+            height: 1117px;
+            float: left;
+
+            font: 12px/18px arial,"\5B8B\4F53";
+        }
+        .z .z1{
+            width: 220px;
+            height: 156px;
+            margin-bottom: 10px;
+            background-color: #cc0000;
+            font: 12px/18px arial,"\5B8B\4F53";
+            color: #333;
+
+        }
+        .z4{
+            width: 220px;
+            height: 4px;
+            background-color: white;
+        }
+        .z5{
+            width: 220px;
+            height: 4px;
+            background-color: white;
+        }
+        /*查找*/
+        .n{
+            width: 218px;
+            height: 114px;
+            border: 1px solid #d7d7d7;
+            background-color: #fff;
+            font: 12px/18px arial,"\5B8B\4F53";
+            color: #333;
+        }
+        .n .hd{
+            width: 218px;
+            height: 34px;
+            border-color: #f8f8f8;
+            border-bottom: 1px solid #d7d7d7;
+            position: relative;
+            font: 12px/18px arial,"\5B8B\4F53";
+            color: #333;
+        }
+        .n .hd h2{
+            font-size: 14px;
+            line-height: 24px;
+            text-indent: 9px;
+            color: #333;
+        }
+        .bd{
+            width: 218px;
+            height: 79px;
+            position: relative;
+            font: 12px/18px arial,"\5B8B\4F53";
+            color: #333;
+        }
+        .srk{
+            width: 146px;
+            height: 26px;
+            left: 10px;
+            top: 16px;
+            display: inline-block;
+            font: 12px/18px arial,"\5B8B\4F53";
+            color: #333;
+            float: bottom;
+        }
+        .input{
+            border: 1px solid #e0e0e0;
+            width: 140px;
+            background: #fff;
+            line-height: 16px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            color: #999;
+            padding-left: 4px;
+            vertical-align: middle;
+            font-size: 100%;
+            outline: 0;
+            margin-top: 17px;
+            margin-left: 10px;
+        }
+        .cz{
+            position: absolute;
+            right: 8px;
+            top: 16px;
+        }
+        .zb .cz:hover{
+            background-position: -49px -82px;
+            text-decoration: none;
+            color: #333;
+        }
+        .zb .cz{
+            width: 48px;
+            height: 28px;
+            line-height: 28px;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            display: inline-block;
+            background-image: url("css.png/bg_sprites.png");
+            text-align: center;
+            vertical-align: middle;
+            font-size: 100%;
+            outline: 0;
+        }
+        .help{
+            width: 156px;
+            height: 18px;
+        }
+        .bd .help{
+            position: absolute;
+            right: 15px;
+            bottom: 6px;
+        }
+            /*验证*/
+        .n1{
+            width: 218px;
+            height: 114px;
+            border: 1px solid #d7d7d7;
+            background-color: #fff;
+            margin-top: 10px;
+            font: 12px/18px arial,"\5B8B\4F53";
+            color: #333;
+        }
+        .n1 .hd1{
+            width: 218px;
+            height: 34px;
+            border-color: #f8f8f8;
+            border-bottom: 1px solid #d7d7d7;
+            position: relative;
+            font: 12px/18px arial,"\5B8B\4F53";
+            color: #333;
+        }
+        .n1 .hd1 h2{
+            font-size: 14px;
+            line-height: 24px;
+            text-indent: 9px;
+            color: #333;
+        }
+        .bd1{
+            width: 218px;
+            height: 79px;
+            position: relative;
+            font: 12px/18px arial,"\5B8B\4F53";
+            color: #333;
+        }
+        .srk1{
+            width: 146px;
+            height: 26px;
+            left: 10px;
+            top: 16px;
+            display: inline-block;
+            font: 12px/18px arial,"\5B8B\4F53";
+            color: #333;
+            float: bottom;
+        }
+        .input1{
+            border: 1px solid #e0e0e0;
+            width: 140px;
+            background: #fff;
+            line-height: 16px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            color: #999;
+            padding-left: 4px;
+            vertical-align: middle;
+            font-size: 100%;
+            outline: 0;
+            margin-top: 17px;
+            margin-left: 10px;
+        }
+        .cz1{
+            position: absolute;
+            right: 8px;
+            top: 16px;
+        }
+        .zb .cz1:hover{
+            background-position: -49px -82px;
+            text-decoration: none;
+            color: #333;
+        }
+        .zb .cz1{
+            width: 48px;
+            height: 28px;
+            line-height: 28px;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            display: inline-block;
+            background-image: url("css.png/bg_sprites.png");
+            text-align: center;
+            vertical-align: middle;
+            font-size: 100%;
+            outline: 0;
+        }
+        .help1{
+            width: 156px;
+            height: 18px;
+        }
+        .bd1 .help1{
+            position: absolute;
+            right: 15px;
+            bottom: 6px;
+        }
+        .help2{
+            width: 96px;
+            height: 14px;
+            margin-top: 28px;
+            margin-left: 115px;
+        }
+        /*公告列表　开始*/
+        .n2{
+            width: 218px;
+            height: 245px;
+            border: 1px solid #d7d7d7;
+            background-color: #fff;
+            margin-top: 10px;
+        }
+        .hd2{
+            width: 218px;
+            height: 34px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #d7d7d7;
+            position: relative;
+        }
+        .n2 .hd2 h2{
+            font-size: 14px;
+            line-height: 30px;
+            text-indent: 9px;
+            color: #333;
+        }
+        .n2 .hd2 .more{
+            position: absolute;
+            right: 15px;
+            top: 10px;
+        }
+        .bd2{
+            width: 218px;
+            height: 210px;
+        }
+        .p li{
+            overflow: hidden;
+            width: 218px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 35px;
+            text-indent: 8px;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        .p1 li{
+            overflow: hidden;
+            width: 218px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 35px;
+            text-indent: 8px;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        .p2 li{
+            overflow: hidden;
+            width: 218px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 35px;
+            text-indent: 8px;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        .p3 li{
+            overflow: hidden;
+            width: 218px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 35px;
+            text-indent: 8px;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        .p4 li{
+            overflow: hidden;
+            width: 218px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 35px;
+            text-indent: 8px;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        .p5 li{
+            overflow: hidden;
+            width: 218px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 35px;
+            text-indent: 8px;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        ul{
+            list-style: none;
+        }
+        /*二维码*/
+        .n3{
+            width: 218px;
+            height: 208px;
+            border: 1px solid #d7d7d7;
+            background-color: #fff;
+            margin-top: 10px;
+        }
+        .hd3{
+            width: 218px;
+            height: 34px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #d7d7d7;
+            position: relative;
+        }
+        .n3 .hd3 h2{
+            font-size: 14px;
+            line-height: 30px;
+            text-indent: 9px;
+            color: #333;
+        }
+        .bd3{
+            width: 218px;
+            height: 173px;
+        }
+        .n3 .bd3 .rwm img{
+            border: none;
+            margin-top: 10px;
+            margin-left: 35px; ;
+        }
+
+        /*常见问题*/
+        .n4{
+            width: 218px;
+            height: 210px;
+            border: 1px solid #d7d7d7;
+            background-color: #fff;
+            margin-top: 10px;
+        }
+        .hd4{
+            width: 218px;
+            height: 34px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #d7d7d7;
+            position: relative;
+        }
+        .n4 .hd4 h2{
+            font-size: 14px;
+            line-height: 30px;
+            text-indent: 9px;
+            color: #333;
+        }
+        .n4 .hd4 .more1{
+            position: absolute;
+            right: 15px;
+            top: 10px;
+        }
+        .m li{
+            overflow: hidden;
+            width: 218px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 35px;
+            text-indent: 8px;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        .m1 li{
+            overflow: hidden;
+            width: 218px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 35px;
+            text-indent: 8px;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        .m2 li{
+            overflow: hidden;
+            width: 218px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 35px;
+            text-indent: 8px;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        .m3 li{
+            overflow: hidden;
+            width: 218px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 35px;
+            text-indent: 8px;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        .m4 li{
+            overflow: hidden;
+            width: 218px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            line-height: 35px;
+            text-indent: 8px;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+        .kg{
+            width: 1000px;
+            height: 24px;
+            margin: auto;
+            background-color: white;
+        }
+        ul{
+            list-style: none;
+        }
+        .z .wym{
+            width: 220px;
+            height: 40px;
+            line-height: 40px;
+            font-weight: 700;
+            display: block;
+            font-size: 16px;
+            color: #FFF;
+            background-image: url("css.png/log.png");
+            text-align: center;
+            text-decoration: none;
+        }
+        .z1 .z3{
+            border: 1px solid #d7d7d7;
+            background: #fff;
+            padding: 3px 0;
+            overflow: hidden;
+        }
+        .z3 li{
+            float: left;
+            line-height: 30px;
+            width: 109px;
+            position: relative;
+            text-align: center;
+            list-style: none;
+        }
+        .z3 .space{
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: black;
+            line-height: 30px;
+            height: 3px;
+            text-align: center;
+            list-style: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: #ff8400;
+        }
+        /*设置a标签*/
+        a{
+            text-decoration: none;
+            color: #333;
+        }
+        .zb .r{
+            width: 770px;
+            height: 1238px;
+            float: right;
+        }
+        .r .r1{
+            width: 498px;
+            height: 280px;
+            background-color: #cc0000;
+            float: left;
+        }
+        .r .r2{
+            width: 260px;
+            height: 282px;
+            background-color: cornflowerblue;
+            float: right;
+            z-index: 9999   ;
+        }
+        .r2 .r3{
+            background-color: #f8f8f8;
+            height: 34px;
+            border-bottom: 1px solid #d7d7d7;
+            position: relative;
+            font: 12px/18px arial,"\5B8B\4F53";
+            color: #333;
+        }
+        .r3 h2{
+            font-size: 14px;
+            line-height: 34px;
+            text-indent: 9px;
+            color: #333;
+        }
+        .r2 .r33{
+            width: 260px;
+            height: 248px;
+            background-color: #d6503d;
+            float: right;
+        }
+        /**************************************************************************************************/
+        .btns{
+			width: 260px;
+			height: 247px;
+		}
+		/*选项卡的样式*/
+		.btns input{
+			width: 130px;
+			height: 31px;
+			background-color: #ddd;/*默认灰色*/
+			color: #666;
+			border: 0;
+            float: left;
+		}
+        .btns input:hover{
+            text-decoration: underline;
+            color: #ff8400;
+        }
+		/*被选中的选项卡的样式*/
+		.btns input.cur{
+			background-color: #fff;
+		}
+		/*内容区的样式*/
+		.contents div{
+			width: 260px;
+			height:248px;
+			background-color: #fff;
+			display: none;/*默认隐藏*/
+			line-height: 300px;
+			text-align: center;
+            margin: -234px auto;
+		}
+		/*被选中的内容区的样式*/
+		.contents div.active{
+			display: block;
+		}
+        .contents{
+            width: 260px;
+            height: 254px;
+        }
+        .contents .active li{
+            width: 258px;
+            height: 35px;
+        }
+        .active li .active1{
+            width: 185px;
+            height: 35px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+        }
+        .active li .h{
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            width: 60px;
+            height: 35px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: #d6503d;
+        }
+        .active li {
+            line-height: 35px;
+            text-indent: 8px;
+        }
+
+
+
+
+        /**************************************************************************************************/
+
+
+
+
+
+
+
+
+        .r3 .nav-tag{
+            width: 119px;
+            height: 31px;
+            position: absolute;
+            right: 2px;
+            top: 4px;
+        }
+        .r3 .nav-tag li{
+            float: left;
+        }
+        .r3 .nav-tag .on a{
+            border: 1px solid #d7d7d7;
+            font-weight: 700;
+            padding: 0 8px;
+            color: #ff8400;
+            border-bottom: none;
+            background: #fff;
+            line-height: 28px;
+        }
+        .r3 .nav-tag a{
+            height: 30px;
+            float: left;
+            display: inline-block;
+            padding: 0 9px;
+            line-height: 30px;
+        }
+        .r4{
+            width: 768px;
+            height: 400px;
+        }
+        .r6{
+            width: 768px;
+            height: 457px;
+            background-color: #fff;
+            border: 1px solid #d7d7d7;
+            margin-top: 292px;
+        }
+        .r6 .xz{
+            background: #f8f8f8;
+            height: 34px;
+            position: relative;
+        }
+        .r6 .xz h2{
+            font-size: 14px;
+            line-height: 34px;
+            text-indent: 9px;
+        }
+        .r6 .xz .xz1{
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            font: 12px/18px arial,"\5B8B\4F53";
+
+        }
+
+        /***************************选择游戏选项卡***************************************/
+        .r66{
+            width: 768px;
+            height: 423px;
+        }
+        /*选项卡的样式*/
+		.btn input{
+			width: 25px;
+			height: 25px;
+			background: #4190e9;/*默认灰色*/
+			color: #fff;
+			border: 0;
+            font: 12px/18px arial,"\5B8B\4F53";
+            text-align: center;
+		}
+		/*被选中的选项卡的样式*/
+		.btn input.curs{
+			background-color: #019e8b;
+		}
+		/*内容区的样式*/
+		.content div{
+			width: 768px;
+			height: 423px;
+			background-color: #fff;
+			display: none;/*默认隐藏*/
+			line-height: 300px;
+			text-align: center;
+		}
+		/*被选中的内容区的样式*/
+		.content div.actives{
+			display: block;
+		}
+        .me{
+            width: 748px;
+            height: 357px;
+            margin-left: 20px;
+            display: block;
+            list-style: none;
+            margin-top: 30px;
+        }
+
+        .actives li{
+            width: 246px;
+            height: 121px;
+        }
+        /****************************选项卡结束**************************************************/
+        .r2 .v{
+            width: 260px;
+            height: 247px;
+            background-color: black;
+        }
+        .r2 .v1{
+            width: 260px;
+            height: 247px;
+            background-color: #d6503d;
+        }
+        .xz1 a:hover{
+            text-decoration: underline;
+        }
+        .r7{
+            width: 768px;
+            height: 413px;
+            background-color: #fff;
+            border: 1px solid #d7d7d7;
+            margin-top: 70px;
+        }
+        .r7 .fb{
+            width: 768px;
+            height: 34px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #d7d7d7;
+            position: relative;
+        }
+        .r7 .fb h2{
+            font-size: 14px;
+            line-height: 34px;
+            text-indent: 9px;
+        }
+        .u{
+            width: 768px;
+            height: 378px;
+            overflow: hidden;
+        }
+        .u1{
+            width: 808px;
+            height: 378px;
+        }
+        .u1 li{
+            width: 367px;
+            height: 42px;
+            float: left;
+            padding-right: 28px;
+            line-height: 42px;
+            text-indent: 8px;
+            vertical-align: middle;
+            font: 12px/18px arial,"\5B8B\4F53";
+        }
+        .u1 li .f{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f1{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g1{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f2{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g2{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f3{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g3{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f4{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g4{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f5{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g5{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f6{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g6{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f7{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g7{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f8{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g8{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f9{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g9{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f10{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g10{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f11{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g11{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f12{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g12{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f13{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g13{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f14{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g14{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f15{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g15{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 li .f16{
+            width: 295px;
+            height: 42px;
+            text-indent: 10px;
+            overflow: hidden;
+            display: inline-block;
+            float: left;
+            vertical-align: middle;
+            line-height: 42px;
+            list-style: none;
+        }
+        .u1 li .g16{
+            width: 60px;
+            height: 42px;
+            float: right;
+            padding-right: 10px;
+            text-align: right;
+            overflow: hidden;
+            color: #d6503d;
+            line-height: 42px;
+            text-indent: 8px;
+            list-style: none;
+        }
+        .u1 .on{
+            background: #f8f8f8;
+        }
+        .q{
+            width: 1000px;
+            height: 190px;
+            margin-top: 1258px;
+            border: 1px solid #d7d7d7;
+            background-color: #fff;
+            clear: both;
+        }
+        .q .w{
+            width: 998px;
+            height: 34px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #d7d7d7;
+            position: relative;
+        }
+        .q .w h2{
+            font-size: 14px;
+            line-height: 30px;
+            text-indent: 9px;
+            color: #333;
+        }
+        .e{
+            width: 998px;
+            height: 153px;
+        }
+        .q li{
+            float: left;
+            width: 33%;
+            margin-top: 20px;
+            /*margin-right: 15px;*/
+        }
+        .q li .t img{
+            width: 76px;
+            height: 76px;
+            display: block;
+            border-radius: 3px;
+        }
+        .e li{
+            float: left;
+            width: 33%;
+            height: 130px;;
+        }
+        .e li .t{
+            width: 76px;
+            height: 76px;
+            background: url("css.png/shop.png") center center no-repeat #a1bcce;
+            float: left;
+            margin: 0 14px 5px 0;
+            border-radius: 3px;
+        }
+        .e li .e1{
+            width: 220px;
+            height: 72px;
+            float: left;
+        }
+        .e li .name{
+            width: 220px;
+            height: 22px;
+        }
+        .e li .name a{
+            display: block;
+            font-weight: 700;
+            font-size: 14px;
+            color: #4190e9;
+            width: 98%;
+            overflow: hidden;
+        }
+        .e .level{
+            width: 220px;
+            height: 25px;
+        }
+        .level1{
+            background-position: -40px 0;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("css.png/level.png");
+            position: relative;
+            top: 5px;
+        }
+        .link{
+            width: 220px;
+            height: 25px;
+        }
+        .e li .link{
+            padding-top: 7px;
+            color: #ff8400;
+            font: 12px/18px arial,"\5B8B\4F53";
+        }
+        .e li .info{
+            clear: both;
+            line-height: 24px;
+            margin: 0 12px 25px;
+            overflow: hidden;
+            height: 24px;
+            color: #333;
+            font: 12px/18px arial,"\5B8B\4F53";
+        }
+        .dc{
+            display: inline-block;
+            background: #ff8400;
+            padding: 0 8px;
+            color: #fff;
+            border-radius: 2px;
+            margin-right: 6px;
+            line-height: 24px;
+        }
+        .e li{
+            float: left;
+            width: 33%;
+            height: 130px;
+        }
+        .e li .t1{
+            width: 76px;
+            height: 76px;
+            background: url("css.png/shop.png") center center no-repeat #a1bcce;
+            float: left;
+            margin: 0 14px 5px 0;
+            border-radius: 3px;
+        }
+        .e li .e2{
+            width: 220px;
+            height: 72px;
+            float: left;
+        }
+        .e li .name1{
+            width: 220px;
+            height: 22px;
+        }
+        .e li .name1 a{
+            display: block;
+            font-weight: 700;
+            font-size: 14px;
+            color: #4190e9;
+            width: 98%;
+            overflow: hidden;
+        }
+        .e .level{
+            width: 220px;
+            height: 25px;
+        }
+        .level1{
+            background-position: -40px 0;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("css.png/level.png");
+            position: relative;
+            top: 5px;
+        }
+        .link1{
+            width: 220px;
+            height: 25px;
+        }
+        .e li .link1{
+            padding-top: 7px;
+            color: #ff8400;
+            font: 12px/18px arial,"\5B8B\4F53";
+        }
+        .e li .info1{
+            clear: both;
+            line-height: 24px;
+            margin: 0 12px 25px;
+            overflow: hidden;
+            height: 24px;
+            color: #333;
+            font: 12px/18px arial,"\5B8B\4F53";
+        }
+        .dc1{
+            display: inline-block;
+            background: #65baf6;
+            padding: 0 8px;
+            color: #fff;
+            border-radius: 2px;
+            margin-right: 6px;
+            line-height: 24px;
+        }
+        .e li{
+            float: left;
+            width: 33%;
+            height: 130px;
+        }
+        .e li .t2{
+            width: 76px;
+            height: 76px;
+            background: url("css.png/shop.png") center center no-repeat #a1bcce;
+            float: left;
+            margin: 0 14px 5px 0;
+            border-radius: 3px;
+        }
+        .e li .e3{
+            width: 220px;
+            height: 72px;
+            float: left;
+        }
+        .e li .name2{
+            width: 220px;
+            height: 22px;
+        }
+        .e li .name2 a{
+            display: block;
+            font-weight: 700;
+            font-size: 14px;
+            color: #4190e9;
+            width: 98%;
+            overflow: hidden;
+        }
+        .e .level{
+            width: 220px;
+            height: 25px;
+        }
+        .level1{
+            background-position: -40px 0;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-image: url("css.png/level.png");
+            position: relative;
+            top: 5px;
+        }
+        .link2{
+            width: 220px;
+            height: 25px;
+        }
+        .e li .link2{
+            padding-top: 7px;
+            color: #ff8400;
+            font: 12px/18px arial,"\5B8B\4F53";
+        }
+        .e li .info2{
+            clear: both;
+            margin: 0 0 25px;
+            overflow: hidden;
+            height: 24px;
+            color: #333;
+            font: 12px/18px arial,"\5B8B\4F53";
+
+        }
+        ul{
+            list-style: none;
+        }
+        .dc2{
+            display: inline-block;
+            background: #ff8400;
+            padding: 0 8px;
+            color: #fff;
+            border-radius: 2px;
+            margin-right: 6px;
+            line-height: 24px;
+        }
+        .dc3{
+            display: inline-block;
+            background: #eb6877;
+            padding: 0 8px;
+            color: #fff;
+            border-radius: 2px;
+            margin-right: 6px;
+            line-height: 24px;
+        }
+        .y{
+            width: 1000px;
+            height: 153px;
+            clear: both;
+            border: 1px solid #d7d7d7;
+            margin-top: 10px;
+        }
+        .y .y1{
+            width: 998px;
+            height: 35px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #d7d7d7;
+            position: relative;
+        }
+        .y .y1 h2{
+            font-size: 14px;
+            line-height: 34px;
+            text-indent: 9px;
+        }
+        .y .y2{
+            width: 998px;
+            height: 62px;
+            padding: 37px 0 17px;
+            overflow: hidden;
+        }
+        .y .y2 li{
+            float: left;
+            text-align: center;
+            height: 62px;
+            width: 332px;
+            position: relative;
+        }
+        img{
+            border: none;
+        }
+        .y .y2 li .s{
+            display: block;
+            width: 1px;
+            height: 30px;
+            background: #d7d7d7;
+            position: absolute;
+            right: 0;
+            top: 6px;
+        }
+        .yq{
+            width: 1000px;
+            height: 66px;
+            border: 1px solid #d7d7d7;
+            background-color: #fff;
+            margin-top: 10px;
+        }
+        .yq p{
+            color: #999;
+            line-height: 22px;
+            padding: 10px 9px;
+            font: 12px/18px arial,"\5B8B\4F53";
+        }
+        .yq p a{
+            color: #999;
+            text-decoration: none;
+
+        }
+        .yq p a:hover{
+            text-decoration: underline;
+        }
+        .yq .i{
+            width: 19px;
+            height: 14px;
+            padding: 0 8px;
+            color: #999;
+            line-height: 22px;
+        }
+        .o{
+            width: 1307px;
+            height: 303px;
+            clear: both;
+            background: #48484c;
+            margin-top: 50px;
+        }
+        .o1{
+            width: 1000px;
+            height: 303px;
+            margin: 0 auto;
+            background: #48484c;
+            padding-top: 35px;
+        }
+        .o1 .o2{
+            width: 1000px;
+            overflow: hidden;
+        }
+        .o1 .o2 ul{
+            width: 1200px;
+        }
+        ul{
+            list-style: none;
+        }
+        .o1 .o2 li{
+            width: 185px;
+            height: 116px;
+            float: left;
+            margin-left: 30px;
+            display: inline;
+        }
+        .o1 .o2 li strong{
+            width: 185px;
+            height: 44px;
+            display: block;
+            font-size: 14px;
+            line-height: 44px;
+            color: #fff;
+        }
+        .o1 .o2 li a{
+            color: #b3b3b4;
+            line-height: 24px;
+            list-style: none;
+            text-decoration: none;
+            font: 12px/18px arial,"\5B8B\4F53";
+        }
+        .o1 .o2 li a:hover{
+            /*text-decoration: underline;*/
+            color: #fff;
+        }
+        .o1 .i{
+            width: 1000px;
+            height: 43px;
+            padding-top: 40px;
+            /*text-align: center;*/
+            position: relative;
+        }
+        .i  a{
+            width: 130px;
+            color: #b3b3b4;
+            display: inline-block;
+            padding: 0 12px;
+            margin:0 100px;
+            height: 38px;
+            line-height: 38px;
+            overflow: hidden;
+            /*background-color: black;*/
+        }
+
+
+        /* 将标签默认的间距设为0 */
+body,ul,p,h1,h2,h3,h4,h5,h6,dl,dd,input,select,form{
+	margin: 0;
+	padding: 0;
+}
+/* 让h标签继承body内设置的字体大小 */
+h1,h2,h3,h4,h5,h6{
+	font-size: 100%;
+}
+
+/* 去掉默认的项目图标 */
+ul{
+	list-style: none;
+}
+/* 强调文字去掉倾斜 */
+em{
+	font-style: normal;
+}
+/* 去掉超链接的下划线 */
+a{
+	text-decoration: none;
+}
+/* 去掉IE下图片做链接的时候产生的边框 */
+img{
+	border: none;
+}
+
+/* 清除margin-top塌陷、清除浮动 */
+.clearfix:before,.clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+/* 兼容IE下清除浮动 */
+.clearfix{
+	zoom: 1;
+}
+
+/* 浮动 */
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+body{
+	font-family: 'Microsoft Yahei';
+	color: #666;
+	font-size: 12px;
+}
+
+.center_con{
+	width: 498px;
+	height: 280px;
+	/*background-color: cyan;*/
+	margin: 0px auto 0;
+}
+
+/* ----------幻灯片样式---------- */
+.slide{
+	width: 498px;
+	height: 280px;
+	position: relative;/* 父容器要设置定位，才能让子元素相对父容器定位 */
+	overflow:hidden;
+}
+.slide .slide_pics{
+	width: 499px;
+	height: 280px;
+	left:0;
+	top:0;
+    bottom: 10px;
+	position:relative;
+}
+.slide .slide_pics li{
+	width: 498px;
+	height: 280px;
+	left:0;
+	top:0;
+	position:absolute;
+}
+
+/* 左右翻页箭头样式 */
+.prev,.next{
+	width: 20px;
+	height: 24px;
+	position: absolute;/* 相对父容器进行绝对定位 */
+	left:10px;
+	top:130px;
+	cursor: pointer;/* 鼠标指针成手形 */
+	background: url(../答辩/css.png/icons1.png) 0px -450px no-repeat;
+}
+.next{
+	left: 470px;
+	background: url(../答辩/css.png/icons1.png) 0px -500px no-repeat;
+}
+
+/* 小圆点样式 */
+.points{
+	position: absolute;/* 块元素默认宽度为父宽度的100%，定位之后就变成行内块了，它不能继承父的宽度，如果没有设置宽高，就由内容决定，所以也必须给它一个宽度 */
+	width: 870px;
+	height: 10px;
+	/*background-color: red;*/
+	left: 10px;
+	bottom: 10px;
+	text-align: center;/* 行内块的居中方式 */
+	font-size: 0;/* 去掉行内块间隙，它引起小圆点没有挨紧，并且向下超出高度范围 */
+}
+.points li{
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	background-color: #9f9f9f;
+	margin: 0 5px;
+	border-radius: 50%;/* 设置圆角，优雅降级，更好效果请升级浏览器，不兼容IE */
+}
+.points .active{
+	background-color: #cecece;
+}
+
+        /******************************页脚*********************************/
+        .footer-wrap{
+            width: 1307px;
+            height: 220px;
+            clear: both;
+            background: #48484c;
+            margin-top: 55px;
+        }
+        .footer{
+            width: 1000px;
+            height: 186px;
+            margin: 0 auto;
+            background: #48484c;
+            padding-top: 35px;
+        }
+        .footer .footer-link{
+            width: 1000px;
+            height: 116px;
+            overflow: hidden;
+        }
+        .footer .footer-link ul{
+            width: 1200px;
+            height: 0;
+            list-style: none;
+        }
+        .footer .footer-link li{
+            width: 185px;
+            float: left;
+            margin-left: 30px;
+            display: inline;
+        }
+        .footer .footer-link li strong{
+            width: 185px;
+            height: 35px;
+            display: block;
+            font-size: 14px;
+            line-height: 23px;
+            color: #fff;
+        }
+        .footer .footer-link li a{
+            color: #b3b3b4;
+            line-height: 24px;
+
+        }
+        .footer .footer-link li a:hover{
+            text-decoration: none;
+            color: #fff;
+        }
+        .footer .company-info{
+            width: 1000px;
+            height: 28px;
+            text-align: center;
+            clear: both;
+            padding: 24px 0 17px;
+            color: #b3b3b4;
+        }
+        .footer .company-info p{
+            padding-bottom: 10px;
+        }
+        .footer .company-info a:hover{
+            text-decoration: none;
+        }
+        .footer .company-info a{
+            color: #b3b3b4;
+        }

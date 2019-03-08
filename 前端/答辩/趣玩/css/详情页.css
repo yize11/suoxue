@@ -1,0 +1,458 @@
+  *{
+	margin: 0;
+	padding: 0;	
+}
+body{
+	background: rgb(244,236,224);
+}
+.page{
+	width: 100%;
+	background: rgb(244,236,224);
+}
+#header{
+	width: 100%;
+	height: 49px;
+	background: #535353;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10009;
+}
+.nav{
+	float: left;
+	height: 49px;
+	font-size: 14px;
+	font-weight: 700;
+	margin-left: 10px;
+}
+.nav li{
+	width: 90px;
+	float: left;	
+	position: relative;
+}
+ul{
+
+	list-style-type: none;
+}
+.nav a.home{
+	display: block;
+	height: 49px;
+	background: url(../img/logo.png) no-repeat center;
+	line-height: 20px;
+}
+.nav li > a{
+	color: #fff;
+	display: block;
+	line-height: 49px;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+}
+.nav a:hover{
+	background-color: #000;
+}
+.funcs{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 9;
+}
+.funcs a.bas{
+	display: inline-block;
+	width: 45px;
+	height: 49px;
+	background-repeat: no-repeat;
+	background-image: 
+}
+.funcs dt{
+	float: left;
+	position: relative;
+	z-index: 9;
+}
+.funcs form{
+	width: 278px;
+	height: 49px;
+	background: #fff;
+
+}
+.funcs input{
+	border: 0 none;
+	float: left;
+}
+.funcs input.submit{
+	width: 43px;
+	height: 49px;
+	font-size: 0;
+	background: url(../img/icons.png);
+}
+.funcs input.submit>a:hover{
+	background: #000;
+}
+.funcs input.text{
+	width: 205px;
+	padding: 13px 15px;
+	line-height: 23px;
+}
+.funcs dd{
+	float: left;
+	position: relative;
+	z-index: 9;
+}
+.funcs dd.user>a{
+	float: left;
+	display: block;
+	width: 60px;
+	height: 49px;
+	color: #fff;
+	line-height: 49px;
+	font-weight: 700;
+	text-align: center;
+	font-family: '微软雅黑';
+	background: url(img/icons.png) no-repeat 0 -1600px;
+}
+.funcs dd.user>a:hover{
+	background: #000;
+}
+#tags{
+	width: 100%;
+	padding: 0 10px;
+	line-height: 32px;
+	font-weight: 700;
+	position: fixed;
+	top: 49px;
+	left: 0;
+	z-index: 10000;
+	background: #8f8c7f;
+}
+ul{
+	list-style-type: none;
+}
+#tags li{
+	float: left;
+	color: #fff;
+	position: relative;
+}
+#tags a{
+	color: #fff;
+	display: block;
+	padding: 0 13px;	
+	font-size: 13px;
+}
+#tags a:hover{
+	background: #000;
+}
+.main {
+    clear: both;
+    padding-top: 85px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+.detail {
+    width: 980px;
+}
+.box{
+	width: 930px;
+	height: 530px;
+	padding: 25px;
+	padding-top: 10px;
+	background: #FFF;
+	margin-bottom: 15px;
+}
+.address{
+	width: 930px;
+	color: #333;
+	font-size: 12px;
+	height: 36px;
+	overflow: hidden;
+	line-height: 36px;
+	font-weight: 700;
+	border-bottom: 1px solid black;
+}
+.address li{
+	float: left;
+}
+.address li.shar{
+	position: relative;
+	float: right;
+}
+.address a{
+	color: #333;
+}
+.sharetip {
+    width: 225px;
+    height: 28px;
+    background: #333;
+    color: #FFF;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    position: absolute;
+    left: -235px;
+    top: 2px;
+}
+.shareIcon {
+    width: 7px;
+    height: 13px;
+    background: url(../img/icons.png) no-repeat -11px -2796px;
+    overflow: hidden;
+    position: absolute;
+    left: -10px;
+    top: 9px;
+}
+.box1 ul li{
+	margin:0 5px;
+}
+.sy{
+	font-family: 雅黑;
+	font-size: 14px;
+	font-weight: bold;
+}
+.infor{
+    color: #999;
+    float: right;
+    width: 430px;
+    position: relative;
+}
+.infor h2{
+    color: #000;
+    line-height: 30px;
+    position: relative;
+    font-weight: 400;
+    margin: 15px 0 15px;
+    display: inline-block;
+}
+.sale{
+    padding-bottom: 10px;
+}
+.sale dt.discount{
+    min-height: 28px;
+    line-height: 28px;
+
+}
+.sale dt strong{
+    color: #ef353d;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+}、
+.sale ul li{
+	margin: 50px 0 80px;
+	display: block;	
+	position: relative;
+	color: #999;
+	font-size: 10px;
+}
+.sale ul li a{
+	position: relative;
+	left:85px;
+	top: -22px;
+	color: black;
+	color: #999;
+	font-size: 15px;
+
+}
+.sale ul li .box3{
+	float: right;
+	width: 80px;
+	height: 15px;
+	font-size: 15px;
+	margin: -18px 265px 0 0;
+	background:url(../img/star.png) no-repeat;
+}
+.sale ul li .box4{
+	float: right;
+	width: 90px;
+	height: 15px;
+	margin: -20px 170px 0 0;
+	display: block;
+	font-size: 15px;
+
+}
+.box5{
+	position: relative;
+	top: 20px;
+	width: 479px;
+	height: 479px;
+	background:url(../img/20180724143935.png) no-repeat;
+}
+.new_like {
+    width: 930px;
+    height: 1950px;
+    padding: 10px 25px;
+    background: #FFF;
+    margin:0 auto;
+    margin-bottom: 14px;
+}
+.details {
+    padding: 0 95px;
+    margin-top: -14px;
+}
+.box6{
+	overflow: hidden;
+	margin-bottom: 14px;
+	background: #fff;
+}
+.details p {
+    padding: 40px 0;
+    text-align: center;
+}
+.
+.details img{
+	display: block;
+	
+}
+.services p{
+	width: 620px;
+	overflow: hidden;
+	margin:30px auto 0;
+	font-size: 11px;
+}
+.services p a{
+	display: inline-block;
+	color: #2c2a24;
+	padding: 0 10px;
+	border-left: 1px solid #2c2a24;
+}
+.services p a.credits{
+	border: 0;
+}
+#footer{
+	color: #74726b;
+	overflow: hidden;
+	line-height: 31px;
+	background: #393835;
+	text-align: center;
+	position: relative;
+	top: 6680px; 	
+}
+#footer .wraps{
+	width: 1320px;
+	margin:0 auto;
+}
+#footer ul{
+	float: left;
+	text-align: center;
+}
+#footer li{
+	display: inline-block;
+	margin-left: -1px;
+
+}
+#footer li a{
+	color: #74726b;
+	padding: 0 10px;
+	border-right: 1px solid #71726b;
+	font-size: 14px;
+}
+#footer p{
+	float: right;
+	padding: 0 20px;
+	font-size: 12px;
+}
+/*.goTop #toTop {
+    width: 52px;
+    height: 132px;
+    background: url(../img/backtop.png) no-repeat;
+    cursor: pointer;
+    display: none;
+    margin-top: 80px;
+    margin-left: 30px;*/
+}
+.services{
+	padding: 30px 0;
+	text-align: center;
+	background: #d9d9d0;
+	position: relative;
+	top: 6680px;
+}
+.guarantees{
+	overflow: hidden;
+	width: 50%;
+	margin:0 auto;
+}
+.warp{
+	font-size: 0;
+}
+.guarantees .dib{
+	margin: 0;
+}
+.dib{
+	display: inline-block;
+}
+.warp .dib{
+	font-size: 12px;
+	letter-spacing: normal;
+	word-spacing: normal;
+	vertical-align: top;
+}
+.goTop .appCode{
+	width: 100px;
+	cursor: pointer;
+	position: relative;
+}
+.goTop .appCode img{
+	width: 120px;
+	margin-left: 0;
+}
+.goTop{
+	width: 100px;
+	position: fixed;
+	top: 120px;
+	right: 10px;
+}
+.goTop #toTop {
+    width: 52px;
+    height: 132px;
+    background: url(../img/backtop.png) no-repeat;
+    cursor: pointer;
+    display: none;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.goods_but {
+    margin-top: 10px;
+    position: relative;
+}
+.goods_but a.buy_btn {
+    color: #fff;
+    width: 143px;
+    margin-right: 7px;
+    background-color: #ff4246;
+}
+.goods_but a, .shareButBox a {
+    display: block;
+    float: left;
+    height: 38px;
+    font-size: 16px;
+    line-height: 38px;
+    text-align: center;
+}
+.goods_but a.fav {
+    width: 89px;
+    color: #fff;
+    margin-right: 8px;
+    padding-left: 38px;
+    background: url(../img/new_public.png) no-repeat 0 0;
+}
+.goods_but a.app_btn {
+    color: #fff;
+    width: 123px;
+    margin-right: 7px;
+    background-color: #ff4246;
+}
+.goods_but p {
+    background: url(../img/gtIcon.png) #f5f4f2 no-repeat;
+    padding: 6px 0;
+    padding-left: 0px;
+    clear: both;
+    color: #666;
+    line-height: 21px;
+    margin-top: 12px;
+    padding-left: 36px;
+    font-size: 14px;
+}
+.sale input{
+	margin-top: 20px;
+}

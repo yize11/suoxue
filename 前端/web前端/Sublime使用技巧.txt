@@ -1,0 +1,174 @@
+安装Sublime
+官网：http://www.sublimetext.com
+安装Sublime Text Build 3143 x64 Setup.exe到D:\Sublime Text 3目录
+勾选Add to explorer context menu，在右键单击文件时就可以直接使用Sublime Text打开
+Finish后在开始菜单找到快捷方式启动
+
+
+打开左侧文件列表视图：View->Side Bar->Show Open Files
+导入文件夹：File->Open Folder->选择某项目文件夹，并在此文件夹下拷入images图片资源，列表视图有显示
+新打开的文件夹合并到一个窗口，不要新开窗口：不要点File->Open Folder，而是Project->Add Folder to Project
+将文件夹从左侧列表移除：右键文件夹->Remove Folder from Project，不要选Delete Folder，它会把文件夹从硬盘上删掉
+Sublime->View->Layout中Single是单独编辑一个页面，Columns：2可分两栏编辑，每个新页面是一个选项卡，双击空白处可新建一个文件
+Preferences->Color Scheme可更换主题
+
+
+快捷键
+放大字号：Ctrl+=
+缩小字号：Ctrl+-
+删除当前行：Ctrl+Shift+K
+复制当前行：Ctrl+Shift+D
+上/下移当前行：Ctrl+Shift+↑/↓
+Ctrl+D    选中光标所占的文本，继续操作则会选中下一个相同的文本
+Ctrl+Shift+L 先选中多行，再按下快捷键，会在每行行尾插入光标，即可同时编辑这些行
+Ctrl+→    向右单位性地移动光标
+
+
+表达式：ul>(li>a)*5
+<ul>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+	<li><a href=""></a></li>
+</ul>
+
+按住Ctrl键，鼠标在多行连续点击，可多行编辑
+创建Html文件：右键项目文件夹或点File菜单->New File->主视图光标处输入文件名test.html，保存在项目文件夹下，清空文件名开始编码
+xhtml版本文档创建方法： html:xt + tab
+H5版本文档创建方法： html:5 + tab 或 ! + tab
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+安装Package Control组件
+按Ctrl+`调出sublime text的console
+粘贴以下代码到底部命令行并回车： 
+import  urllib.request,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler()));open(os.path.join(ipp,pf),'wb').write(urllib.request.urlopen('http://sublime.wbond.net/'+pf.replace('; ','%20')).read())
+重启Sublime Text，在Perferences->package settings中看到package control，则表示安装成功
+
+
+安装Emmet插件可以按Tab补全代码
+按Ctrl+Shift+P调出命令板
+输入install
+然后选择install Package
+然后输入emmet
+找到 Emmet，点击就可以自动完成安装
+
+
+文件路径提示功能：安装AutoFileName插件
+点开菜单“preferences”——“package control”
+下拉框中选择“install package”
+等待几秒中，在弹出的新下拉框中，输入“autofilename”，下拉框会自动更新列表。点击列表项“autofilename”进行安装
+点击菜单“preferences”——“package setting”，可以看到“autofilename”插件已经安装到编辑器中
+
+
+安装IMESupport插件
+让中文输入法跟随光标，安装完毕后，重启Sublime就可以了
+
+
+设置多个浏览器预览
+安装SideBarEnhancements插件，安装好以后点击工具栏的 preferences > package setting > side bar > Key Building-User键入以下代码
+
+[
+	……,
+	{ "keys": ["f1"],
+	"command": "side_bar_files_open_with",
+	"args": { "paths": [], "application": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe", "extensions": ".*" }
+	},
+	{ "keys": ["f2"],
+	"command": "side_bar_files_open_with",
+	"args": { "paths": [],"application": "C:\\Program Files\\Mozilla Firefox\\firefox.exe","extensions": ".*" }
+	},
+	{ "keys": ["f3"],
+	"command": "side_bar_files_open_with",
+	"args": { "paths": [], "application": "C:\\Program Files\\internet explorer\\iexplore.exe", "extensions": ".*" }
+	}
+]
+
+安装jQuery插件
+这样写jQuery代码时有代码提示
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+安装Node.js
+node.js的中文网站：https://nodejs.org/zh-cn/
+
+
+安装 autoprefixer 插件（需要Node.js支持，实际工作中不需要使用该插件，而是使用自动化工具gulp）
+执行 preferences——key Bindings——Users 
+设置快捷键 { "keys": ["ctrl+alt+x"], "command": "autoprefixer" } 
+通过此工具可以按照最新的前缀使用情况给样式自动加前缀
+
+
+last 7 versions：最新的浏览器的7个版本
+cascade：缩进美化属性值
+remove：是否去掉不必要的前缀
+
+preferences》package setting》AutoPrefixer》Setting-User
+{
+	"browsers":["last 7 versions"],
+	"cascade":true,
+	"remove":true
+}
+
+
+
+
+
+
+
+
+登录、注册             首页、列表页、商品详情页、加入购物车、购物车、结算页、信息提示页、我的订单
+
+
+
+
+
+
+https://www.jianshu.com/u/11bbc2c5d0c6
+登录、注册   首页   必做

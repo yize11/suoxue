@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loading动画</title>
+    <style type="text/css">
+        .box{
+            width:600px;
+            height: 500px;
+            border: 1px solid #000;
+            margin: 50px auto 50px;
+            position: relative;
+        }
+        .box1{
+            width:50px;
+            height: 100px;
+            position: absolute;
+            left: 100px;
+            top:240px;
+            background-color:red;
+            border-radius:15px;
+            animation: moving 300ms ease 200ms infinite alternate both;
+        }
+        .box2{
+            width:50px;
+            height: 100px;
+            position: absolute;
+            left: 200px;
+            top: 240px;
+            background-color: green;
+            border-radius: 15px;
+            animation: moving 200ms ease 200ms infinite alternate both;
+        }
+        .box3{
+            width: 50px;
+            height: 100px;
+            position: absolute;
+            left: 300px;
+            top: 240px;
+            background-color: blueviolet;
+            border-radius: 15px;
+            animation: moving 200ms ease 300ms infinite alternate both;
+        }
+        .box4{
+            width: 50px;
+            height: 100px;
+            position: absolute;
+            left: 400px;
+            top: 240px;
+            background-color: yellow;
+            border-radius: 15px;
+            animation: moving 300ms ease 200ms infinite alternate both;
+        }
+        .box5{
+            width: 50px;
+            height: 100px;
+            position: absolute;
+            left: 500px;
+            top: 240px;
+            background-color: orangered;
+            border-radius: 15px;
+            animation: moving 100ms ease 300ms infinite alternate both;
+        }
+        @keyframes moving {
+            from{
+                transform: scaleY(1);
+            }
+            to{
+                transform: scaleY(0.5);
+            }
+
+        }
+        .box p{
+            display: inline-block;
+            position: absolute;
+            top: 400px;
+            left: 280px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <p>loading...</p>
+</div>
+</body>
+</html>

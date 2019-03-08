@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            width: 1300px;
+            height: 150px;
+            background-color: white;
+            margin: 0 auto;
+        }
+        .header1{
+            width: 1300px;
+            height: 20px;
+            background-color: antiquewhite;
+            margin: 0 auto;
+        }
+        .nav1{
+            padding-left: 16px;
+            padding-right: 10px;
+            background-position: 0 -112px;
+            display: block;
+            margin-left: 50px;
+            color: #ff7300 !important;
+            font-size: 12px;
+            line-height: 20px;
+            text-decoration: none;
+        }
+        .header2{
+            width: 1300px;
+            height: 80px;
+            background-color: darkblue;
+            margin: 0 auto;
+            border: 1px red;
+        }
+        .h1{
+            width:200px;
+            height: 58px;
+            background-color: #444444;
+            margin: 0 50px;
+            padding-top: 10px;
+        }
+        /*.h2{
+            width: 200px;
+            height: 38px;
+            background-color: ;
+            margin: 0 auto;
+        }
+        .h3{
+            width: 1300px;
+            height: 80px;
+            background-color: darkblue;
+            margin: 0 auto;
+        }*/
+        .header3{
+            width: 1200px;
+            height: 50px;
+            background-color: sienna;
+            margin: 0 auto;
+        }
+       .nav{
+            list-style: none;
+            /*background-color: yellow;*/
+            width: 1200px;
+            /*margin: 50px auto;*/
+            overflow: hidden;
+        }
+        .nav li{
+			/*设置li向左浮动*/
+			float: left;
+			width: 7%;
+		}
+        .nav a{
+			/*将a转换为块元素*/
+			display: block;
+			/*为a指定一个宽度*/
+			width: 100%;
+            height: 40px;
+            line-height: 40px;
+			/*设置文字居中*/
+			text-align: center;
+			/*设置一个上下内边距*/
+			padding: 5px 0;
+			/*去除下划线*/
+			text-decoration: none;
+			/*设置字体颜色*/
+			color: white;
+			/*设置加粗*/
+			font-weight: bold;
+		}
+
+		/*设置a的鼠标移入的效果*/
+		.nav a:hover{
+			background-color: #cc0000;
+        }
+        /*.w1{
+            width: 2px;
+            height: 14px;
+            margin-top: 10px;
+        }*/
+        .content{
+            width: 1200px;
+            height: 500px;
+            background-color: olive;
+            margin: 10px auto;
+        }
+        .left{
+            width: 300px;
+            height:100%;
+            background-color: crimson;
+            float: left;
+        }
+        .center{
+            width: 580px;
+            height:100%;
+            background-color: cyan;
+            float: left;
+            margin: 0 10px;
+        }
+        .center1{
+            width:100%;
+            height:250px;
+            background-color: cadetblue;
+
+        }
+        .center2{
+            width:100%;
+            height:230px;
+            background-color: blue;
+            margin: 20px 0;
+
+        }
+        .right{
+           width: 300px;
+            height:100%;
+            background-color: chartreuse;
+            float: left;
+        }
+        .right1{
+           width: 100%;
+            height:270px;
+            background-color: black;
+            float: left;
+
+        }
+        .right2{
+           width: 100%;
+            height:210px;
+            background-color: blueviolet;
+            float: left;
+            margin: 20px 0;
+        }
+        .footer{
+            width: 1200px;
+            height: 1792px;
+            background-color: orange;
+            margin: 10px auto;
+        }
+        .Q1{
+            width: 1200px;
+            height: 30px;
+            background-color: bisque;
+            margin-top:10px;
+        }
+        .mainTitle{
+            width: 80px;
+            height: 30px;
+            font-weight: bold;
+            padding: 5px 0;
+        }
+        .Q2{
+           margin-top: 9px;
+            color: #999999;
+        }
+        .footer1{
+            width:600px;
+            height:100%;
+            background-color: darkgray;
+            float: left;
+            border-right:0;
+        }
+        .A {
+            width: 590px;
+            height: 320px;
+            background-color: saddlebrown;
+            float: left;
+            margin-bottom: 10px;
+        }
+        .B {
+            width: 590px;
+            height: 320px;
+            background-color: chartreuse;
+            float: left;
+            margin-bottom: 10px;
+        }
+        .C {
+            width: 590px;
+            height: 320px;
+            background-color: blue;
+            float: left;
+            margin-bottom: 10px;
+
+        }
+        .D {
+            width: 590px;
+            height: 320px;
+            background-color: indigo;
+            float: left;
+            margin-bottom: 10px;
+
+        }
+        .E{
+            width: 590px;
+            height: 320px;
+            background-color: orchid;
+            float: left;
+            margin-bottom: 10px;
+
+        }
+        .footer2{
+            width: 600px;
+            height:100%;
+            background-color: deeppink;
+            float: right;
+            border-left:10px;
+        }
+        .a {
+            width: 590px;
+            height: 320px;
+            background-color: cyan;
+            float: left;
+            margin-bottom: 10px;
+        }
+        .b {
+            width: 590px;
+            height: 320px;
+            background-color: fuchsia;
+            float: left;
+            margin-bottom: 10px;
+        }
+        .c {
+            width: 590px;
+            height: 320px;
+            background-color: darkslategray;
+            float: left;
+            margin-bottom: 10px;
+        }
+        .d {
+            width: 590px;
+            height: 320px;
+            background-color: olivedrab;
+            float: left;
+            margin-bottom: 10px;
+        }
+        .e {
+            width: 590px;
+            height: 320px;
+            background-color: firebrick;
+            float: left;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+    <body>
+        <!-- 头部div -->
+        <div class="header">
+            <div class="header1">
+                <ul class="nav1">
+                <li><a href="https://3g.1688.com/?spm=a260k.dacugeneral.2683862.d1.6633436ciJYtde&tracelog=wireless_alibar">手机阿里</a></li></ul>
+            </div>
+
+            <div class="header2">
+                <div class="h1"></div>
+                <div class="h2"></div>
+                <div class="h3"></div>
+            </div>
+            <div class="header3">
+                <ul class="nav">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">淘货源</a></li>
+                    <li><a href="#">伙拼</a></li>
+                    <li><a href="#">微商进货</a></li>
+                    <li><a href="#">跨境专供</a></li>
+                    <li><a href="#">进口货源</a></li>
+                    <li><a href="#">品牌站</a></li>
+                    <li><a href="#">淘工厂 | </a></li>
+                    <!--<span class="w1">|</span>-->
+                    <li><a href="#">档口尖货</a></li>
+                    <li><a href="#">实力优品</a></li>
+                    <li><a href="#">大企业采购</a></li>
+                    <li><a href="#">以商会友</a></li>
+                    <li><a href="#">生意经</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--主题内容div-->
+        <div class="content">
+            <!--左侧-->
+            <div class="left"></div>
+            <!--中间-->
+            <div class="center">
+                <div class="center1"></div>
+                <div class="center2"></div>
+            </div>
+            <!--右侧-->
+            <div class="right">
+                <div class="right1"></div>
+                <div class="right2"></div>
+            </div>
+        </div>
+        <!--底部信息div-->
+        <div class="footer">
+            <div class="Q1">
+                <div class="mainTitle">特色货源</div>
+                <div class="Q2">小二精选　好商好货</div>
+            </div>
+            <div class="footer1">
+                <div class="A"></div>
+                <div class="B"></div>
+                <div class="C"></div>
+                <div class="D"></div>
+                <div class="E"></div>
+            </div>
+            <div class="footer2">
+                <div class="a"></div>
+                <div class="b"></div>
+                <div class="c"></div>
+                <div class="d"></div>
+                <div class="e"></div>
+            </div>
+
+        </div>
+    </body>
+</html>

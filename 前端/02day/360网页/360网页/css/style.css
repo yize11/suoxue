@@ -1,0 +1,274 @@
+body{
+	background: url(../img/bd-bg.png) repeat-x;
+}
+/*解决高度塌陷问题clearfix*/
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.clearfix{
+	zoom: 1;
+}
+/*固定元素的宽度和居中*/
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+.header{
+	padding-top: 37px;
+	padding-bottom: 46px;
+}
+/*设置logo的位置*/
+.logo{
+	margin-left: 15px;
+}
+/*设置导航条*/
+.nav{
+	/*右浮动*/
+	float: right;
+	margin-top: 22px;
+} 
+.nav li{
+	/*左浮动*/
+	float: left;
+	padding: 0 10px 8px;
+	border-left: 1px #d6d6d6 dotted;
+
+}
+
+.nav a{
+	color: #666; 
+	font:bold 14px Georgia;
+	text-decoration: none;
+}
+
+.nav a:hover{
+	color: #a5a4a4;
+	text-decoration: underline;
+}
+
+.nav p{
+	color: #b7b7b7;
+	 font: 11px Tahoma;
+}
+
+/*设置banner*/
+.banner{
+	height: 356px;
+	background: #bfa url(../img/banner-bg.png) no-repeat bottom center;
+	position: relative;
+}
+
+/*设置小圆点*/
+.pointerDiv{
+	position: absolute;
+	top: 314px;
+	left: 15px;
+}
+.pointerDiv a{
+	float: left;
+	width: 17px;
+	height: 17px;
+	margin-left: 4px;
+	background: url(../img/pointer.png) no-repeat;
+}
+
+.pointerDiv .active,
+.pointerDiv a:hover{
+	background: url(../img/pointer-active.png) no-repeat;
+}
+
+
+.content h1{
+	text-align: center;
+	font: bold 24px Georgia;
+	padding: 6px 0 20px 0;
+	margin-bottom: 30px;
+	background: url(../img/line.png) no-repeat bottom center;
+}
+
+/*中间的三个div*/
+/*.content{
+	background-color: red;
+}*/
+.content .pl, .content .cs, .content .uc,
+.contact .sc, .contact .co, .contact .nu{
+	float: left;
+	width: 300px;/*
+	background-color: yellow;*/
+}
+
+.content .cs, .contact .co{
+	margin: 0 20px;
+}
+
+.content h2{
+	color: #11719e;
+	font: 21px Georgia;
+}
+
+.content .p1{
+	color: #8c8c8c;
+	font: 12px Helvetica;
+}
+
+/*设置图片div*/
+.content .imgDiv{
+	width: 299px;
+	height: 190px;
+	background: url(../img/img-bg.png) no-repeat;
+	margin: 15px 0px;
+	text-align: center;
+	padding-top: 12px;
+}
+
+.content .p2{
+	height: 92px;
+	color: #3e3e3e;
+	font: 13px Helevetica;
+	word-spacing: 5px;
+}
+
+.content .lm{
+	display: block;
+	width: 163px;
+	height: 40px;
+	background:url(../img/btn1.png) no-repeat;
+	color: #016999;
+	font: 12px/40px Helvetica; 
+	text-indent: 1em;
+	text-decoration: none;
+	margin-bottom: 35px;
+}
+.contact{
+	background: url(../img/line.png) no-repeat top center;
+}
+
+.contact .txt{
+	width: 276px;
+	height: 33px;
+	line-height: 33px;
+	background: url(../img/input.png) no-repeat;
+	_background-attachment: fixed;
+	border: none;
+	padding: 0 10px;
+	margin: 0px 0px 16px;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.contact .tarea{
+		display: block;
+}
+}
+	
+
+.contact .tarea{ 
+	width: 276px;
+	height: 114px;
+	background: url(../img/textarea.png) no-repeat;
+	_background-attachment: fixed;
+	border: none;
+	overflow: auto;
+	resize: none;
+	padding: 10px ;
+	margin: 0;
+}
+
+.contact .btn{
+	width: 163px;
+	height: 32px;
+	background: url(../img/btn2.png) no-repeat;
+	padding: 0;
+	margin: 11px 0 23px;
+	color: white;
+	font: 13px Georgia;
+	text-align: left;
+	text-indent: 1em;
+	cursor: pointer;
+}
+
+
+.contact h2{
+	color: #444;
+	font: 18px/1 Georgia;
+	border-bottom: 1px dashed #d3d3d3;
+	padding: 44px 0px 10px;
+	margin-bottom: 15px;
+}
+
+.sc .p1{
+	color: #444;
+	font: 12px/1 Helvetica;
+}
+.sc .icon{
+	font-size: 0;
+	margin-top: 4px;
+}
+.sc .icon a{
+	margin-right: 6px;
+}
+.sc .nl{
+	color: #444;
+	font: bold 18px/1 "Gill Sans MT";
+	padding: 34px 0 10px;
+}
+
+.sc .txt{
+	margin-top: 15px;
+	_margin-top: 18px;
+	margin-bottom: 0px;
+}
+
+.nu img{
+	float: left;
+	margin-right: 8px;
+}
+
+.nu p{
+	height: 58px;
+	_height: 60px;
+	color: #444;
+	font: 12px/1 Helvetica;
+	border-bottom: 1px dashed #d3d3d3;
+	margin-bottom: 15px;
+	padding-bottom: 8px;
+}
+
+.nu .no-margin{
+	margin-bottom: 0px;
+}
+
+.nu .no-btn{
+	_margin-left: -1em;
+}
+.footer{
+	height: 173px;
+	background: #333;
+	border-top: 10px solid #4c4c4c;
+}
+
+.footer a, .footer p{
+	color: #999;
+	font: 11px Helcetica;
+	text-decoration: none;
+}
+
+.footer a:hover{
+	color: #d1d2d2;
+	text-decoration: underline;
+}
+.footer .copy{
+	float: right;
+	display: inline;
+}
+
+.footer p{
+	margin-left: 8px;
+	margin-right: 24px;
+	margin-bottom: 10px;
+}
+
+.footer .a{
+	margin-top: 18px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手游交易平台登录页</title>
+    <link rel="stylesheet" type="text/css" href="../答辩/css2.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header1">
+            <a href="#">
+            <div class="logo">
+                <h1>交易猫</h1>
+                <span class="logo1">专业手游交易平台</span>
+            </div>
+            </a>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="wrap1">
+            <div class="hd">
+                <h2>使用账号登录
+                    <span class="link">交易猫</span>
+                </h2>
+            </div>
+
+
+        <div class="bd">
+            <div class="wrap2">
+                <!--账号-->
+                <div id="dLoginName" class="row">
+                    <label>账号:</label>
+                    <input id="loginName" class="input" type="text" onblur="validLoginName('https://api.open.uc.cn/cas/', '/')"  name="loginName" value="" maxlength="100"  placeholder="手机/邮箱/用户名/账号" autocomplete="off">
+                </div>
+                <!--密码-->
+                <div id="dPassword" class="row1">
+                    <label>密码:</label>
+                    <input id="password" class="input1" type="password" onblur="validPwd('/')" maxlength="20"  name="password" value=""  placeholder="请输入密码" autocomplete="off">
+                </div>
+                <div class="row3"></div>
+                <div id="dBuutton" class="row4">
+                    <a id="submit_btn" class="input2" style="cursor:pointer" onclick="submitForm('https://api.open.uc.cn/cas/', '/');return false"  alt="登录" value="登录" >登录</a>
+                </div>
+                <div class="row5">
+                    <a class="em" href="#">忘记密码？</a>
+                    |
+                    <a class="em" href="#">遇到问题？</a>
+                    <a class="em1" href="#">免费注册</a>
+                </div>
+            </div>
+            <div class="ds">
+                <h2>使用其他方式登录:</h2>
+                <div class="ds1">
+                    <a class="qq" href="#"></a>
+                    <br>
+                    <a class="taobao" href="#"></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="_umfp" style="display:inline;width:1px;height:1px;overflow:hidden"></div>
+    <div class="x">
+        <div class="x1">
+            <div class="x2">
+                <ul>
+                    <li>
+                        <strong>新手入门</strong>
+                        <a href="#">免费注册</a>
+                        <br>
+                        <a href="#" target="_blank">如何购买商品</a>
+                        <br>
+                        <a href="#" target="_blank">如何发布商品</a>
+                    </li>
+                     <li>
+                        <strong>诚信服务</strong>
+                        <a href="#" target="_blank">用户协议</a>
+                        <br>
+                        <a href="#" target="_blank">免责声明</a>
+                         <br>
+                        <a href="#" target="_blank">7*24小时服务</a>
+                    </li>
+                    <li>
+                        <strong>交易保障</strong>
+                        <a href="#" target="_blank">寄售交易</a>
+                        <br>
+                        <a href="#" target="_blank">支付宝交易</a>
+                         <br>
+                        <a href="#" target="_blank">投诉与建议</a>
+                    </li>
+                    <li>
+                        <strong>售后服务</strong>
+                        <a href="#" target="_blank">联系客服</a>
+                    </li>
+                    <li>
+                        <strong>友情链接</strong>
+                        <a href="#" target="_blank">九游门户</a>
+                        <br>
+                        <a href="#" target="_blank">九游论坛</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="x3">
+                 Copyright © 2013 jiaoyimao.com    版权所有    ICP证：粤ICP备13009613号-2
+            </div>
+        </div>
+    </div>
+</body>
+</html>

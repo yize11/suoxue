@@ -1,0 +1,234 @@
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            width: 1307px;
+            height: 100px;
+            background: #fff;
+            border-bottom: 1px solid #ddd;
+            list-style: none;
+            font-weight: 400;
+            font-size: 12px;
+            color: #666;
+
+        }
+        .header1{
+            width: 990px;
+            margin: 0 auto;
+            height: 100px;
+            position: relative;
+            list-style: none;
+            font-weight: 400;
+            font-size: 12px;
+            color: #666;
+            font-family: arial,"\5FAE\8F6F\96C5\9ED1",Verdana;
+        }
+        .btn{
+            width: 98px;
+            height: 40px;
+            float: right;
+            margin: 39px 10px 0 0;
+            list-style: none;
+            font-weight: 400;
+        }
+        a.btn_home  {
+            margin: 0 10px;
+            display: inline-block;
+            line-height: 26px;
+            text-indent: 22px;
+            background: url("css2.png/fangzi.png")no-repeat 0 50%;
+            color: #666;
+            font-size: 14px;
+            text-decoration: none;
+            list-style: none;
+            font-weight: 400;
+        }
+        .header2{
+            width: 990px;
+            height: 87px;
+        }
+        .logo{
+            width: 174px;
+            height: 72px;
+            padding-top: 15px;
+        }
+        .header3{
+            width: 162px;
+            height: 52px;
+            position: absolute;
+            top: 26px;
+            left: 200px;
+            line-height: 26px;
+            list-style: none;
+            font-weight: 400;
+        }
+        .wrap{
+            width: 980px;
+            height: 686px;
+            background: url("css2.png/bg.png") left repeat-y;
+            padding-right: 10px;
+            margin: 0 auto;
+            border-right: 1px solid #f0f0f0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .menu{
+            float: left;
+            width: 164px;
+            height: 190px;
+        }
+        .menu1{
+            width: 154px;
+            height: 180px;
+            float: right;
+            margin-top: 10px;
+            font-family: Arial;
+        }
+        .menu1 li.menu2{
+            background: #fff url("css2.png/on.png") left no-repeat;
+            border-radius: 4px 0 0 4px;
+        }
+        .menu1 li{
+            width: 154px;
+            height: 90px;
+            cursor: pointer;
+            list-style: none;
+        }
+        .menu1 .reg{
+            width: 142px;
+            height: 34px;
+            padding: 33px 0 0 12px;
+            list-style: none;
+        }
+        .menu1 .reg img{
+            vertical-align: middle;
+            padding-right: 10px;
+            font-size: 14px;
+            color: #333;
+            font-weight: 700;
+        }
+        .menu1 .reg{
+            font-size: 14px;
+            color: #333;
+            font-weight: 700;
+        }
+        .cont{
+            width: 806px;
+            height: 645px;
+            margin-left: 174px;
+            padding: 10px 0 30px;
+        }
+        .tip{
+            width: 786px;
+            height: 18px;
+            background: #f0f0f0;
+            padding: 10px;
+            font-size: 12px;
+            margin: 0 0 10px;
+            color: #666;
+            font-family: arial,"\5FAE\8F6F\96C5\9ED1",Verdana;
+        }
+        .tip a{
+            width: 24px;
+            height: 14px;
+            color: #2ba0e3;
+            text-decoration: none;
+            font-size: 12px;
+            list-style: none;
+            font-weight: 400;
+        }
+        .menu3{
+            width: 806px;
+            height: 405px;
+        }
+        .reglist{
+            width: 748px;
+            height: 327px;
+            padding: 30px 0 15px 58px;
+            border-top: 1px #fff solid;
+            list-style: none;
+            font-weight: 400;
+            font-size: 12px;
+            color: #666;
+            font-family: arial,"\5FAE\8F6F\96C5\9ED1",Verdana;
+        }
+
+        /*表单验证*/
+        .jumbotron{
+            height:450px;
+            margin-top:0px;
+            margin-bottom:10px;
+            padding: 0;
+            }
+        .form{
+            width: 748px;
+            height: 327px;
+            padding: 30px 0 15px 58px;
+            border-top: 1px #fff solid;
+            list-style: none;
+            font-weight: 400;
+            font-size: 12px;
+            color: #666;
+            font-family: arial,"\5FAE\8F6F\96C5\9ED1",Verdana;
+        }
+        .form .error_tip{
+            font-size: 12px;
+            color:#e62e2e;
+            display:none;
+        }
+        .form .error_tip2{
+            float:right;
+            height:24px;
+            line-height:24px;
+            font-size: 12px;
+            color:#e62e2e;
+            display:none;
+        }
+        .form-control{
+            display: block;
+            width: 40%;
+            height: 25px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #555;
+            background-color: #fff;
+            background-image: none;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group{
+            margin-bottom: 15px;
+        }
+        .center-block{
+            display: block;
+            margin: -7px 140px;
+        }
+
+
+
+
+        .gd{
+            width: 806px;
+            height: 157px;
+            margin: 135px 0 0 8px;
+        }
+        .footer1{
+            height: 70px;
+            padding-top: 10px;
+            color: #999;
+            text-align: center;
+            font-family: Arial,Verdana;
+            font-size: 12px;
+            list-style: none;
+        }
+        .footer1 p{
+            padding-top: 10px;
+        }
+        .footer1 a:link{
+            color: #999;
+        }
+        .footer1 a{
+            margin: 0 10px;
+            text-decoration: none;
+        }

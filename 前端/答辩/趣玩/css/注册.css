@@ -1,0 +1,201 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.zhu{
+	width: 1000px;
+	height: 700px;
+	background-color: rgb(143, 140, 127);
+	margin: 0 auto;
+
+}
+/*遮罩样式*/ 
+  		
+.hezi1{
+	width: 500px;
+	height: 550px;
+	background-color: white;
+	margin-left: 250px;
+	/*display: none;*/
+	/*position: absolute;
+	top:70px;*/
+	position: fixed;/*使用固定定位*/ 
+  			left: 50%;/*左上角位于页面中心*/ 
+  			top: 50%; 
+  			margin-left: -250px;/*让div向左偏移半个宽度、向上偏移半个高度，使div位于页面中心*/ 
+  			margin-top: -275px; 
+  			z-index: 9999;/*弹窗在最前面*/
+}
+
+.hezi2.H4{
+	width: 500px;
+	height: 50px;
+	background-color: white;
+	border-bottom: 1px solid #dadbd9;
+
+}
+.hezi2{
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.hezi2 a{
+	margin-left: 475px;
+	position: relative;
+	top: -25px;
+	left: -10px;
+}
+.hezi3{
+	width: 500px;
+	height: 130px;
+	background-color: white;
+	border-bottom: 1px solid #dadbd9;
+}
+#p1{
+	font-size: 14px;
+	margin-left: 35px;
+	color: #999;
+}
+.hezi3 li{
+	float: right;
+	margin: 5px;
+}
+.hezi3 ul{
+	margin-right: 40px;
+	list-style-type: none;
+}
+#b2{
+	margin-top: 60px;
+	margin-left: 33px;
+	color: #999;
+}
+#b3{
+	margin-left: 240px;
+	position: relative;
+	top: -21px;
+	text-decoration: none;
+	color: #999;
+	font-weight: bold;
+}
+#b3:hover{
+	text-decoration: underline;
+}
+#b4{
+	margin-left: 288px;
+	color: #999;
+	text-decoration: none;
+	position: relative;
+	top: -42px;
+	font-weight: bold;
+}
+#b4:hover{
+	text-decoration: underline;
+}
+#b5{
+	margin-left: 355px;
+	color: #999;
+	text-decoration: none;
+	position: relative;
+	top: -62px;
+	font-weight: bold;
+}
+#b5:hover{
+	text-decoration: underline;
+}
+.hezi4{
+	width: 500px;
+	height: 215px;
+	background-color: white;
+}
+#b6{
+	margin-left: 33px;
+	padding-top: 15px;
+	color: #999;
+
+}
+#b7{
+	margin-left: 33px;
+	padding-top: 15px;
+	color: #999;
+}
+.txt{
+	width: 350px;
+	height: 30px;
+	margin-left: 100px;
+	position: relative;
+	top: -26px;
+	color: #999;
+}
+
+#b8{
+	margin-left: 33px;
+	padding-top: 1px;
+	color: #999;
+}
+#b9{
+	margin-left: 385px;
+	font-size: 13px;
+	position: relative;
+	top: -30px;
+}
+.txt2{
+	width: 350px;
+	height: 30px;
+	margin-left: 100px;
+	position: relative;
+	top: -26px;
+	color: #999;
+}
+.txt3{
+	width: 350px;
+	height: 30px;
+	margin-left: 100px;
+	position: relative;
+	top: -26px;
+	color: #999;
+}
+.txt4{
+	width: 90px;
+	height: 20px;
+	margin-left: 100px;
+	position: relative;
+	top: -22px;
+	color: #999;
+}	
+#b10{
+	margin-left: 33px;
+	padding-top: 1px;
+	color: #999;
+}
+#b11{
+	margin-left: 33px;
+	padding-top: 1px;
+	color: #999;
+	font-size: 13px;
+}
+.hezi4 a img{
+	height: 26px;
+	margin-left: 200px;
+	position: relative;
+	bottom: 48px;
+}
+.hezi4 a.img:hover{
+	background-color: white;
+}
+.hezi5{
+	width: 115px;
+	height: 35px;
+	background-color: rgb(51, 51, 51);
+	margin-left: 190px;
+	margin-bottom: 30px;
+	position: relative;
+	bottom: 30px;
+}
+.hezi5:hover{
+	background-color: black;
+}
+.hezi5 p{
+	color: #dadbd9;
+	text-align: center;
+	padding-top: 5px;
+}

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>趣玩购物车</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="icon" href="animated_favicon.gif" type="image/gif" />
+  <link href="http://i3.quwan.com/themes/default/css/2013/normalize.css?d=1533006001" rel="stylesheet" type="text/css" />
+  <link href="http://i4.quwan.com/themes/default/css/2013/base.css?d=1533006001" rel="stylesheet" type="text/css" />
+  <link href="http://i2.quwan.com/themes/default/css/2013/layout.css?d=1533006001" rel="stylesheet" type="text/css" />
+  <link href="http://i2.quwan.com/themes/default/css/2013/flow.css?d=1533006001" rel="stylesheet" type="text/css" />
+  <link href="http://i3.quwan.com/themes/default/css/2013/gift.css?d=1533006001" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="http://i4.quwan.com/themes/default/js/quwan.js?d=1533006001" charset="UTF-8"></script>
+  <script type="text/javascript" src="http://i3.quwan.com/themes/default/js/cityConfig.js?d=1533006001" charset="UTF-8"></script>
+</head>
+<body>
+  <script type="text/javascript" src="http://static.criteo.net/js/ld/ld.js" async="true"></script>
+  <script type="text/javascript" src="http://i2.quwan.com/themes/default/js/global_min.js?d=1533006001" charset="UTF-8"></script>
+  <script type="text/javascript" src="http://i3.quwan.com/themes/default/js/quwan-plugin.js?d=1533006001" charset="UTF-8"></script>
+  <div id='login_head_show' style='display:none;height:30px;line-height:30px;background:#f2f2f2;'>
+    <div id='login_head_show_title' style='width:960px;margin:0 auto;'></div>
+  </div>
+<div id="header">
+  <ul class="nav">
+    <li>
+      <a class="home" href="#"></a>
+    </li>
+    <li>
+      <a class="new " href="#">每日上新</a>
+    </li>
+    <li>
+      <a class="top " href="#">TOP50</a>
+    </li>
+    <li> 
+      <a class="dis " href="#">趣发现</a>
+      <i class="app" style="width:40px;height:20px;position:absolute;top:3px;left:65px;background:url('http://i4.quwan.com/themes/default/imgs/2013/common/gift_sprite.png') no-repeat -107px 0;"></i>
+    </li>
+    <li>
+      <a class="app " href="#">趣玩App</a>
+      <i class="app" style="width:40px;height:20px;position:absolute;top:3px;left:65px;background:url('http://i2.quwan.com/themes/default/imgs/2013/common/gift_sprite.png') no-repeat -107px 0;"></i>
+    </li>
+    <li>
+      <a class="he" href="#">购物车</a>
+      <i style="width: 40px;height: 20px;position: absolute;top: 3px;left: 65px;background: url(img/gift_sprite.png) no-repeat -107px 0;"></i>
+    </li>
+  </ul>
+  <dl class="funcs">
+    <dt>
+      <form id="searchForm" name="searchForm" method="get" action="http://www.quwan.com/search_2013.php" onsubmit="return checkSearchFormAction();">
+        <input class="text" name="keywords" id="so_txt" type="text" title="可输入商品名称、商品ID、商品品牌进行搜索" />
+        <input class="submit" type="submit" value="搜索" />
+      </form>
+    </dt>
+    <dd class="user" id="login_message">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+    </dd>
+  </dl>
+</div>
+<ul id="tags">
+  <li class="tags">
+    <a href="#" >家居良品</a>
+  </li>
+  <li class="tags">
+    <a href="#" >男得好货</a>
+  </li>
+  <li class="tags">
+    <a href="#" >清新萌物</a>
+  </li>
+  <li class="tags">
+    <a href="#" >与众不童</a>
+  </li>
+  <li>
+    <a href="#">视频找好玩</a>
+  </li>
+</ul>
+
+<div class="main">
+  <div id="global_body">
+  <div id="step_1" class="step_box"></div>
+  <div class="MyCart">
+    <span class="Ctext">我的购物车&ensp;</span>
+    <span class="freight" id="free_shopping">|实付满<b>199</b>元即免运费，您还差<b>61</b>元</span>
+    <input type="hidden" value="199" id="freeMoney">
+    <input type="hidden" value="61" id="freePrice">
+  </div>
+  <div class="cart_title" style="height:0px; padding:5px 0; overflow:hidden;">
+    <h1>我的购物车</h1>
+    <div id="shipping_area_top">满<b></b>元即免运费，您还差<b>¥61.00</b></div>
+  </div>
+  <dl class="cart_box">
+    <dt>
+      <span class="cb_r1">商品</span>
+      <span class="cb_r2">单价</span>
+      <span class="cb_r3">花费积分</span>
+      <span class="cb_r4">数量</span>
+      <span class="cb_r5">小计</span>
+      <span class="cb_r6">操作</span>
+    </dt> 
+    <dd id="cart_goods">
+  <div id="cart_goods_area">  
+        
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" id="goods_60358_0_0_0">    
+      <tr>
+        <td class="cb_r11 zp_td">
+          <a href="http://www.quwan.com/goods_2013-60358.html" target="_blank">
+            <img src="http://i2.quwan.com/images/201805/1526596774862051618-55.jpg" alt="牛奶瓶灯伴睡留言灯-白色" width="55" height="55" />
+          </a>
+        </td>
+        <td class="cb_r12 zp_td">
+          <a href="http://www.quwan.com/goods_2013-60358.html" target="_blank">牛奶瓶灯伴睡留言灯-白色</a>
+        </td>
+        <td align="center" class="cb_r2 zp_td goods_price"title ="69.00">¥69.00</td>
+        <td align="center" class="cb_r3 zp_td">0</td>
+        <td align="center" class="cb_r4 zp_td">
+          <p class="num_line">
+            <span class="fl num_down" onclick="addorminus('minus','60358','60358_0_0_0')">&nbsp;</span>
+            <input id="num_input_60358_0_0_0" objNum="2" onblur="updatecart('60358','60358_0_0_0');" data0="60358" data1 = "69.00" class="fl num_input" maxlength="4" type="text" value="2"  />
+            <input id="goods_price_60358_0_0_0" type="hidden" value="69.00"   />
+            <input id="jifen_60358_0_0_0" type="hidden" value="0"   />
+            <span class="fl num_up" onclick="addorminus('add','60358','60358_0_0_0')">&nbsp;</span>  
+            <span class="num_tip" id="num_tip_60358_0_0_0" style="display:none;"></span>
+          </p>
+        </td>
+        <td align="center" class="cb_r5 zp_td">
+          <span>
+            <b id="subtotal_60358_0_0_0">¥138.00</b>
+          </span>
+        </td>
+        <td align="center" class="cb_r6 zp_td">
+          <span class="del_opt" gift="" rec_key="60358_0_0_0">删除</span>
+        </td>
+      </tr>
+    </table>
+  
+    
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" id="goods_60358_0_0_0" class="cart_goods_area" style="display:none;">
+        <tr>
+          <td class="cb_r11 zp_td">
+            <a href="http://www.quwan.com/goods_2013-60358.html" target="_blank">
+              <img src="http://i3.quwan.com/images/201805/1526596774862051618-55.jpg" alt="牛奶瓶灯伴睡留言灯-白色" width="55" height="55" />
+            </a>
+          </td>
+          <td class="cb_r12 zp_td">
+            <a href="http://www.quwan.com/goods_2013-60358.html" target="_blank" class="redTex">牛奶瓶灯伴睡留言灯-白色</a>
+          </td>
+          <td align="center" class="cb_r13 zp_td"></td>
+          <td align="center" class="cb_r2 zp_td redTex">¥69.00</td>
+          <td align="center" class="cb_r3 zp_td redTex">0</td>
+          <td align="center" class="cb_r4 zp_td">
+            <p class="num_line">
+              <span class="fl subtract_icon">&nbsp;</span>
+              <input id="num_input_60358_0_0_0" class="fl num_input input_bg" type="text"/>
+              <input id="goods_price_60358_0_0_0" type="hidden" value="69.00"/>
+              <input id="jifen_60358_0_0_0" type="hidden" value="0"/>
+              <span class="fl add_icon">&nbsp;</span>
+              
+              <span class="num_tip" id="num_tip_60358_0_0_0" style="display:none;"></span>
+            </p>
+            <img src="themes/default/imgs/flow/stockout.png" class="stock_img"/>
+          </td>
+          <td align="center" class="cb_r5 zp_td">
+            <span>
+              <b id="subtotal_60358_0_0_0">¥138.00</b>
+            </span>
+          </td>
+          <td align="center" class="cb_r6 zp_td">
+            <span class="del_opt" gift="" rec_key="60358_0_0_0">删除</span>
+          </td>
+        </tr>                  
+    </table>  
+      <div id="cart_favor_area"></div>
+    </dd>
+  </dl>
+  <dl class="cart_info" id="cart_info" >
+    
+    <div id="bonus_list_area">
+      <dt style="display:none" id="yhq_1">
+        	<ul class="yhq_line">
+            <li>
+              <span class="yhq_lab">使用已有优惠券:</span>
+            </li>
+              <li class="yhq_select yhq_inputbox" style="padding-right:0;width:212px;">
+                <input class="yhq_input" id="yhq_input" name="" type="text" style="width:200px;cursor:pointer;" value="您的账户中没有优惠券..." readonly=readonly />
+              </li>
+            <li class="yhq_select">
+              <span class="yhq_sbtn">选择</span>
+            </li>
+            <li>
+              <span class="yhq_lab">
+                <a  class="blue yhq_js_change"  style="padding-left:10px;">输入优惠券/兑换券代码</a>
+              </span>
+            </li>
+            <li id="yhq_tip_1"></li> 
+          </ul>
+          <div class="clear"></div>
+      </dt>
+      <dt  id="yhq_2">
+        	<ul class="yhq_line">
+            	<li>
+                <span class="yhq_lab">输入优惠券/兑换券代码:</span>
+              </li>
+                <li class="yhq_select yhq_inputbox" style="width:165px;">
+                  <input id="bonus_sn" class="yhq_input" name="" maxlength="25" type="text"/>
+                </li>
+                <li class="yhqyzm_box" style="display:none;">
+                  <span class="fl yzm_lab">验证码:</span>
+                  <img src="captcha.php?" alt="看不清？请点击！" id='captcha1' style="cursor: pointer;" onClick="this.src='captcha.php?'+Math.random()"/>
+                  <input class="fl yhq_yzm" id="bonus_captcha" type="text" maxlength="6"/>
+                  <span class="fl yzm_lab">看不清？
+                  <a style="cursor:pointer;" onClick="$('#captcha1').click();" class="blue">换一张</a>
+                  </span>
+                </li>
+                <li class="yhq_select" id="use_quan">
+                  <a  onClick="addBonus($('#bonus_sn').val());" class="use_btn" >使用</a>
+                </li>
+                <li>
+                  <span class="yhq_lab">
+                    <a  class="blue yhq_js_change"  style="padding-left:10px;">使用已有优惠券>></a>
+                  </span>
+                </li> 
+                <li id="yhq_tip_2"></li> 
+            </ul>
+            <div class="clear"></div>
+        </dt>
+        <input type="hidden" value="0" id="bonus_list_num"></div>
+        
+    <dd>
+      <ul class="fr cart_sum" id="total_area">
+        <li>商品金额：<span style="color:#646462;font-size:16px;">¥138.00</span></li>
+        <li id="total_price">花费积分：0</li>
+        <li id="total_discount" style="display:none;">兑换券折扣：<span class="prinumber">-¥0.00</span></li>
+        <li id="total_bonus" style="display:none;">优惠券折扣：<span class="prinumber">-¥0.00</span></li>
+        <li id="total_discount" style="display:none;">活动优惠：<span class="prinumber">-¥0.00</span></li>
+        <li id="recommend_discount" style="display:none;">用户推荐九折：<span class="prinumber">-¥0.00</span></li>
+        <li id="com_email_discount" style="display:none;">企业专享折扣：<span class="prinumber">-¥0.00</span></li>
+        <li id="total_amount" style="padding-top: 10px;margin-top: 6px;display:none;">应付商品金额：<font>¥138.00</font></li>
+        <li>（不含运费）</li>
+        <input id="totalprice" type="hidden" value="138.00">
+        <input id="totalhgintegral" type="hidden" value="0">
+        <input id="totalbonus" type="hidden" value="0.00">
+        <input id="totaldiscount" type="hidden" value="0.00">
+        <input id="totalticket" type="hidden" value="0.00">
+        <input id="totalamount" type="hidden" value="138.00">
+        <input id="recommenddiscount" type="hidden" value="0.00">
+      </ul>  
+      <div class="clear"></div>
+    </dd>
+  </dl>
+  <div class="cart_btn">    
+    <a class="fr cbtn check_btn"  id="checkout1" >去结算</a>
+    <a class="fr cbtn gono_btn" href="http://www.quwan.com/" target="_blank">继续购物</a>
+  </div>
+
+<div class="cheapPro">
+	<div class="cheapList">
+    	<p>以下活动即将结束</p>
+        <ul>
+
+        	<li>
+            <a class="pho_link" href="#" target="_blank">
+              <img src="http://i2.quwan.com/images/201706/1496259973008101330-233.jpg" title="安迪哲学女士中筒袜礼盒" />
+            </a>
+            <p class="lTime" id="lTime0" data-time="2018-07-31 16:07:00"></p>
+            <p class="titP">
+              <a href="#" target="_blank">安迪哲学女士中筒袜礼盒</a>
+            </p>
+            <div class="priLi">￥29.00<br>
+              <font>￥59.00</font>
+              <a onClick="inToCartAction('58358','安迪哲学女士中筒袜礼盒',0,0,1,$('#fm').val())" href="javascript:;">加入购物车</a>
+            </div>
+            <i>4.9折</i>
+          </li>
+
+          <li>
+            <a class="pho_link" href="#" target="_blank">
+              <img src="http://i2.quwan.com/images/201706/1496259973008101330-233.jpg" title="安迪哲学女士中筒袜礼盒" />
+            </a>
+            <p class="lTime" id="lTime0" data-time="2018-07-31 16:07:00"></p>
+            <p class="titP">
+              <a href="#" target="_blank">安迪哲学女士中筒袜礼盒</a>
+            </p>
+            <div class="priLi">￥29.00<br>
+              <font>￥59.00</font>
+              <a onClick="inToCartAction('58358','安迪哲学女士中筒袜礼盒',0,0,1,$('#fm').val())" href="javascript:;">加入购物车</a>
+            </div>
+            <i>4.9折</i>
+          </li>
+
+          <li>
+            <a class="pho_link" href="#" target="_blank">
+              <img src="http://i2.quwan.com/images/201706/1496259973008101330-233.jpg" title="安迪哲学女士中筒袜礼盒" />
+            </a>
+            <p class="lTime" id="lTime0" data-time="2018-07-31 16:07:00"></p>
+            <p class="titP">
+              <a href="#" target="_blank">安迪哲学女士中筒袜礼盒</a>
+            </p>
+            <div class="priLi">￥29.00<br>
+              <font>￥59.00</font>
+              <a onClick="inToCartAction('58358','安迪哲学女士中筒袜礼盒',0,0,1,$('#fm').val())" href="javascript:;">加入购物车</a>
+            </div>
+            <i>4.9折</i>
+          </li>
+
+          <li>
+            <a class="pho_link" href="#" target="_blank">
+              <img src="http://i2.quwan.com/images/201706/1496259973008101330-233.jpg" title="安迪哲学女士中筒袜礼盒" />
+            </a>
+            <p class="lTime" id="lTime0" data-time="2018-07-31 16:07:00"></p>
+            <p class="titP">
+              <a href="#" target="_blank">安迪哲学女士中筒袜礼盒</a>
+            </p>
+            <div class="priLi">￥29.00<br>
+              <font>￥59.00</font>
+              <a onClick="inToCartAction('58358','安迪哲学女士中筒袜礼盒',0,0,1,$('#fm').val())" href="javascript:;">加入购物车</a>
+            </div>
+            <i>4.9折</i>
+          </li>
+        </ul>
+    </div>
+</div>
+
+<div class="pop_out" id="del_pop_favor">
+  	<div class="pop_in">
+    	<div class="pop_top">
+        <div class="close"></div>
+      </div> 
+    </div>
+  </div>
+  <div class="pop_out" id="del_pop">
+  	<div class="pop_in">
+    	<div class="pop_top">
+        <div class="close"></div>
+      </div>
+    </div>
+  </div>
+<div style="height: auto;background-color:#ccc;" id="quehuo_pop" class="pop_out">
+  <div style="position: relative; width:297px; height:142px;" class="do_box pop">
+    <dl class="do_top">      
+      <dd style="border-bottom-width: 0px; height:20px;">
+        <div class="close rlclose">关闭</div>
+      </dd> 
+    </dl>
+    <div class="clear"></div>
+  </div>
+</div>	
+</div>
+	</div>
+<script type="text/javascript" src="http://i3.quwan.com/themes/default/js/global.js?d=1533006001" charset="UTF-8"></script>
+<script type="text/javascript" src="http://i4.quwan.com/themes/default/js/2013/header.js?d=1533006001" charset="UTF-8"></script>
+<script type="text/javascript" src="http://i4.quwan.com/themes/default/js/js-clib.js?d=1533006001" charset="UTF-8"></script>
+<script type="text/javascript" src="http://i3.quwan.com/themes/default/js/hotkeys.js?d=1533006001"></script>
+<script type="text/javascript" src="http://i4.quwan.com/themes/default/js/divpop.js?d=1533006001" charset="UTF-8"></script>
+<script type="text/javascript">setHeadFlowNum();</script>
+
+<div class="goTop_box"  style="left:10px; top:260px;">
+  <div class="appCode">
+    <img src="http://i2.quwan.com/themes/default/imgs/2013/common/appCode.png" alt="">
+  </div>
+</div>
+<div class="goTop_box" style="top:450px; right:0px;">
+  <div id="toTop"></div>
+</div>
+<div class="services">
+  <ul class="guarantees">
+    <a target="_blank" href="#" class="dib"><img src="http://i3.quwan.com/themes/default/imgs/2013/common/footer_01.png" alt="分销合作"></a>
+    <a target="_blank" href="#" class="dib"><img src="http://i4.quwan.com/themes/default/imgs/2013/common/footer_02.png" alt="30天退换货保障"></a>
+    <a target="_blank" href="#" class="dib"><img src="http://i1.quwan.com/themes/default/imgs/2013/common/footer_03.png" alt="VIP大宗采购"></a>
+    <a target="_blank" href="#" class="dib"><img src="http://i2.quwan.com/themes/default/imgs/2013/common/footer_04.png" alt="客服电话"></a>
+    <a target="_blank" href="#" class="dib"><img src="http://i3.quwan.com/themes/default/imgs/2013/common/footer_05.png" alt="意见反馈"></a>
+    <a target="_blank" href="#" class="dib"><img src="http://i4.quwan.com/themes/default/imgs/2013/common/footer_06.png" alt="新浪微博"></a>
+    <a class="dib"><img src="http://i2.quwan.com/themes/default/imgs/2013/common/footer_07.png" alt="腾讯微信"></a>
+    <a class="dib"><img src="http://i3.quwan.com/themes/default/imgs/2013/common/footer_09.png" alt="趣玩App二维码"></a>
+  </ul>
+  <p>
+    <a class="credits" href="#">积分计划</a>
+    <a href="#">优惠券/礼品卡</a>
+    <a href="#">商品兑换券</a>
+    <a class="invoice" href="#">发票制度</a>
+    <a href="#">配送说明</a>
+    <a href="#">退换货保障</a>
+    <a href="#" title="趣玩B2B" target="_blank">趣玩B2B官网</a>
+  </p>
+</div>
+<div id="appDown" class="app-down">
+</div>
+<div id="footer">
+  <div class="wraps">
+    <ul>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">联系我们</a></li>
+      <li><a href="#l">友情链接</a></li>
+      <li><a class="pact" href="#">经销加盟</a></li>
+      <li><a href="#">团购优惠</a></li>
+      <li><a href="#">网站地图</a></li>
+      <li><a href="#">加入趣玩</a></li>
+      <li><a id='___szfw_logo___' href='#' [^] target='_blank'>诚信网站</a>
+    <script type='text/javascript'>(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();</script></li>
+    </ul>
+    <p>©趣玩网 2008-2018 成都趣生活网络科技有限公司 版权所有 蜀ICP备14003947 | 京ICP证100388号</p>
+  </div>
+</div>
+</body>
+</html>

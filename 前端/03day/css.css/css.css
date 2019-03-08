@@ -1,0 +1,76 @@
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .a{
+            width: 1000px;
+            height: 300px;
+            background-color: black;
+            margin: 100px 0 0 100px;
+        }
+        .a .a1{
+            width: 700px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: white;
+            border: 2px solid #d7d7d7;
+        }
+        .a1 .a2{
+            width: 700px;
+            height: 50px;
+            background-color: #4190e9;
+            border-radius: 10px;
+        }
+        .a2 h2{
+            font-size: 20px;
+            text-align: center;
+            line-height: 40px;
+        }
+        .a1 .a3{
+            width: 700px;
+            height: 80px;
+            background-color: white;
+            margin-top: 20px;
+        }
+        .inputtxt{
+            width: 250px;
+            height: 30px;
+            border: 1px solid #ccc;
+            padding: 0px;
+            text-indent: 10px;
+        }
+        .a3 span{
+            font-size: 14px;
+        }
+        .inputbtn{
+            width: 40px;
+            height: 32px;
+            padding: 0px;
+            border: 1px solid #ccc;
+        }
+        .a1 p{
+            font-size: 15px;
+            margin: 0 0 0 10px;
+        }
+        .list{
+			margin:0;
+			padding:0;
+			list-style:none;
+			margin-top:20px;
+		}
+
+		.list li{
+			height:30px;
+			line-height:30px;
+			border-bottom:1px solid #ccc;
+		}
+
+		.list li span{
+			float:left;
+		}
+
+		.list li a{
+			float:right;
+			text-decoration:none;
+			margin:0 10px;
+		}

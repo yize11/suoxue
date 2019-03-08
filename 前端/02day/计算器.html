@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <script type="text/javascript">
+        window.onload=function() {
+            var oInput01 = document.getElementById('input01');
+            var oSelect = document.getElementById('select');
+            var oInput02 = document.getElementById('input02');
+            var oBtn = document.getElementById('btn');
+            oBtn.onclick = function () {
+                var val01 = oInput01.value;
+                var val02 = oInput02.value;
+
+
+                switch (oSelect.value) {
+                    case '0'://+
+                        alert((parseFloat(oInput01.value)+parseFloat(oInput02.value) * 100 ) / 100);
+                        break;
+                    case '1'://-
+                        alert((parselFloat(oInput01.value * 100) - parseFloat(oInput02.value) * 100) / 100);
+                        break;
+                    case '2'://*
+                        alert((parselFloat(oInput01.value * 100) * parseFloat(oInput02.value) * 100) / 10000);
+                        break
+                    case '3':// /
+                        alert(parseFloat(oInput01.value * 100) / parseFloat(oInput02.value * 100))
+                        break;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>计算器</h1>
+    <input type="text" name="" id="input01" />
+    <select id="select">
+        <option value="0"></option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+    </select>
+    <input type="text" name="" id="input02" />
+    <input type="button" name="" value="计算" id="btn" />
+</body>
+</html>

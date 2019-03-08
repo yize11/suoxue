@@ -1,0 +1,940 @@
+2019-03-06 14:30:27 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: crawlSpiderUsed)
+2019-03-06 14:30:28 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 05:52:31) - [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Darwin-17.7.0-x86_64-i386-64bit
+2019-03-06 14:30:28 [py.warnings] WARNING: /Users/ljh/.virtualenv/scrapy_learn/lib/python3.6/site-packages/scrapy/commands/crawl.py:57: ScrapyDeprecationWarning: CrawlerRunner.spiders attribute is renamed to CrawlerRunner.spider_loader.
+  self.crawler_process.spiders.list()
+
+2019-03-06 14:30:28 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'crawlSpiderUsed', 'COOKIES_ENABLED': False, 'LOG_FILE': 'chinaz.log', 'NEWSPIDER_MODULE': 'crawlSpiderUsed.spiders', 'SPIDER_MODULES': ['crawlSpiderUsed.spiders']}
+2019-03-06 14:30:28 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-03-06 14:30:28 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'crawlSpiderUsed.middlewares.UserAgentDownloadMiddler',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-06 14:30:28 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-06 14:30:28 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-03-06 14:30:28 [scrapy.core.engine] INFO: Spider opened
+2019-03-06 14:30:28 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-06 14:30:28 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6025
+2019-03-06 14:30:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangyemap.html> (referer: None)
+2019-03-06 14:30:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_shiyedanwei.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_bijia.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_tuangou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhineng.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_dongman.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaohua.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_shoucang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_mingxing.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_gouwu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_shipin.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_yinshua.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_dianshi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiudian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_lvxingshe.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_lvyou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_biyun.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_jigou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yaopin.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_meirong.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_nanke.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_jiankang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yiliaoqixie.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yiyuan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_shengyu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_jianfei.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_fuyou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_fucai.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_tiyuyuanxiao.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_tiyuyongpin.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_jixian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_tiyuzonghe.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_qiulei.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_qipai.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_wushu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_danche.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_it.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_vr.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_chuangye.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_dianshangfuwu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_guanggao.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_shuju.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_youjian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_shouji.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_zhifu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_zhanzhang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_wangpan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_sheji.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_yuming.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_jishu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_ruanjian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_anquan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_yingjian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_zhengquan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_muying.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_p2p.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_yingyong.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_caijing.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_chaxun.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_qiche.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_xueche.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_fangchang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_jiaoyou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_rencai.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_yinhang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_hunjia.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_canyin.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_chongwu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_jiazheng.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_jiancai.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_fenlei.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_life.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_zhaoshang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_wuliu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_nongye.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_qichechangshang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_huagong.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_shangwu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_fangzhi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_fushi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_shihua.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_shuinuan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_jiaju.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_jiadian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_guangdian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_shipin.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_jianzhu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_peijian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_jixie.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_dianzi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_guanggaoyingxiao.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_baihuo.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_kuaguogongsi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_shuidian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_daxue.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_peixun.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_wenyi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_kexue.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_rihua.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_tianwen.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_liuxue.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_baike.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_junshi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_waiyu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_zhanguan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_jiaoyuzixun.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_xuexiao.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_kaoshi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_zaixianjiaoyu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_daohang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_wujin.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_sousuo.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_shejiao.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_difang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_luntan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_boke.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_qq.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_falu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_tupian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_youxi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_menhu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xingzuo.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_yinyue.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_shishang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:30:38 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-06 14:30:38 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 42623,
+ 'downloader/request_count': 143,
+ 'downloader/request_method_count/GET': 143,
+ 'downloader/response_bytes': 2463392,
+ 'downloader/response_count': 143,
+ 'downloader/response_status_count/200': 143,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 6, 6, 30, 38, 205474),
+ 'log_count/DEBUG': 144,
+ 'log_count/INFO': 7,
+ 'memusage/max': 51687424,
+ 'memusage/startup': 51687424,
+ 'request_depth_max': 1,
+ 'response_received_count': 143,
+ 'scheduler/dequeued': 143,
+ 'scheduler/dequeued/memory': 143,
+ 'scheduler/enqueued': 143,
+ 'scheduler/enqueued/memory': 143,
+ 'start_time': datetime.datetime(2019, 3, 6, 6, 30, 28, 453205)}
+2019-03-06 14:30:38 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-03-06 14:47:41 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: crawlSpiderUsed)
+2019-03-06 14:47:41 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 05:52:31) - [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Darwin-17.7.0-x86_64-i386-64bit
+2019-03-06 14:47:41 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'crawlSpiderUsed', 'COOKIES_ENABLED': False, 'LOG_FILE': 'chinaz.log', 'NEWSPIDER_MODULE': 'crawlSpiderUsed.spiders', 'SPIDER_MODULES': ['crawlSpiderUsed.spiders']}
+2019-03-06 14:47:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+2019-03-06 14:47:41 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'crawlSpiderUsed.middlewares.UserAgentDownloadMiddler',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-06 14:47:41 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-06 14:47:41 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-03-06 14:47:41 [scrapy.core.engine] INFO: Spider opened
+2019-03-06 14:47:41 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-06 14:47:41 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-03-06 14:47:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangyemap.html> (referer: None)
+2019-03-06 14:47:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_shoucang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_dongman.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_mingxing.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaohua.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_shishang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xingzuo.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_yinyue.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_shiyedanwei.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_tupian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhineng.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_youxi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_lvyou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_dianshi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiudian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_lvxingshe.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yiliaoqixie.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_biyun.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_jigou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_shengyu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_meirong.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_jiankang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_nanke.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_fuyou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yiyuan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_fucai.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_qipai.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_tiyuyongpin.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yaopin.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_jixian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_qiulei.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_danche.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_tiyuzonghe.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_tiyuyuanxiao.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_vr.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_shipin.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_it.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_tiyu_wushu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_dianshangfuwu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_shuju.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_guanggao.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_zhanzhang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_wangpan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_shouji.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_youjian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_anquan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_chuangye.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_jianfei.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_yuming.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_sheji.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_jishu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_ruanjian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_yingjian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_yingyong.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_muying.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_xueche.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_p2p.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_zhengquan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_chaxun.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_yinhang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_qiche.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_caijing.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_fangchang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_hunjia.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_rencai.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_fenlei.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_canyin.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_jiancai.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_chongwu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_jiaoyou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_life.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo_jiazheng.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shenghuo.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_qichechangshang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_wuliu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_zhaoshang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_nongye.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_yinshua.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_shangwu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_shihua.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_huagong.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_fushi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_shipin.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_fangzhi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_zhifu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_jiadian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_shuinuan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_jiaju.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_jianzhu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_wujin.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_kuaguogongsi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_baihuo.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_guangdian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_peijian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_rihua.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_jixie.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_guanggaoyingxiao.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_shuidian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_daxue.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_qiye_dianzi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_baike.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_tianwen.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_liuxue.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_junshi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_kaoshi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_jiaoyuzixun.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_zhanguan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_waiyu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_xuexiao.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_kexue.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_wenyi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_zaixianjiaoyu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu_peixun.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_qq.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_sousuo.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_shejiao.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_daohang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_boke.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_difang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_falu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_menhu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_gouwu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_luntan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaoyu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_bijia.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_tuangou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:47:47 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-06 14:47:47 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 43508,
+ 'downloader/request_count': 143,
+ 'downloader/request_method_count/GET': 143,
+ 'downloader/response_bytes': 2447368,
+ 'downloader/response_count': 143,
+ 'downloader/response_status_count/200': 143,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 6, 6, 47, 47, 918371),
+ 'log_count/DEBUG': 144,
+ 'log_count/INFO': 7,
+ 'memusage/max': 51990528,
+ 'memusage/startup': 51986432,
+ 'request_depth_max': 1,
+ 'response_received_count': 143,
+ 'scheduler/dequeued': 143,
+ 'scheduler/dequeued/disk': 143,
+ 'scheduler/enqueued': 143,
+ 'scheduler/enqueued/disk': 143,
+ 'start_time': datetime.datetime(2019, 3, 6, 6, 47, 41, 396907)}
+2019-03-06 14:47:47 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-03-06 14:48:26 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: crawlSpiderUsed)
+2019-03-06 14:48:26 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 05:52:31) - [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Darwin-17.7.0-x86_64-i386-64bit
+2019-03-06 14:48:26 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'crawlSpiderUsed', 'COOKIES_ENABLED': False, 'LOG_FILE': 'chinaz.log', 'NEWSPIDER_MODULE': 'crawlSpiderUsed.spiders', 'SPIDER_MODULES': ['crawlSpiderUsed.spiders']}
+2019-03-06 14:48:26 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+2019-03-06 14:48:26 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'crawlSpiderUsed.middlewares.UserAgentDownloadMiddler',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-06 14:48:26 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-06 14:48:26 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-03-06 14:48:26 [scrapy.core.engine] INFO: Spider opened
+2019-03-06 14:48:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-06 14:48:26 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-03-06 14:48:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangyemap.html> (referer: None)
+2019-03-06 14:48:27 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://top.chinaz.com/hangye/index_yule.html> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-03-06 14:48:27 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-03-06 14:48:27 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 287,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 8781,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'dupefilter/filtered': 142,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 3, 6, 6, 48, 27, 278368),
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 7,
+ 'memusage/max': 51871744,
+ 'memusage/startup': 51867648,
+ 'request_depth_max': 1,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/disk': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/disk': 1,
+ 'start_time': datetime.datetime(2019, 3, 6, 6, 48, 26, 945311)}
+2019-03-06 14:48:27 [scrapy.core.engine] INFO: Spider closed (finished)
+2019-03-06 14:48:44 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: crawlSpiderUsed)
+2019-03-06 14:48:44 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 05:52:31) - [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Darwin-17.7.0-x86_64-i386-64bit
+2019-03-06 14:48:44 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'crawlSpiderUsed', 'COOKIES_ENABLED': False, 'LOG_FILE': 'chinaz.log', 'NEWSPIDER_MODULE': 'crawlSpiderUsed.spiders', 'SPIDER_MODULES': ['crawlSpiderUsed.spiders']}
+2019-03-06 14:48:44 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+2019-03-06 14:48:44 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'crawlSpiderUsed.middlewares.UserAgentDownloadMiddler',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-06 14:48:44 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-06 14:48:44 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-03-06 14:48:44 [scrapy.core.engine] INFO: Spider opened
+2019-03-06 14:48:44 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-06 14:48:44 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-03-06 14:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangyemap.html> (referer: None)
+2019-03-06 14:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_gouwu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_bijia.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhineng.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_tuangou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_shiyedanwei.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:44 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://top.chinaz.com/hangye/index_yule.html> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-03-06 14:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_mingxing.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_dongman.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_shoucang.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaohua.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_lvyou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_dianshi.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiudian.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_lvxingshe.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_jigou.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_biyun.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yaopin.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_8.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_289.html> (referer: http://top.chinaz.com/hangye/index_yule.html)
+2019-03-06 14:48:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_6.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_64.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_56.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_chuangye.html> (referer: http://top.chinaz.com/hangyemap.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_8.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong_15.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_21.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_dianshi_12.html> (referer: http://top.chinaz.com/hangye/index_news_dianshi.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_7.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_7.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_6.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_dianshi_8.html> (referer: http://top.chinaz.com/hangye/index_news_dianshi.html)
+2019-03-06 14:48:46 [scrapy.crawler] INFO: Received SIG_UNBLOCK, shutting down gracefully. Send again to force 
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_5.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_63.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_4.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yaopin_11.html> (referer: http://top.chinaz.com/hangye/index_yiliao_yaopin.html)
+2019-03-06 14:48:46 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_8.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_7.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_3.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_55.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_56.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_6.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou.html)
+2019-03-06 14:48:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_62.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_64.html)
+2019-03-06 14:48:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_288.html> (referer: http://top.chinaz.com/hangye/index_yule_289.html)
+2019-03-06 14:48:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yaopin_8.html> (referer: http://top.chinaz.com/hangye/index_yiliao_yaopin.html)
+2019-03-06 14:48:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yaopin_6.html> (referer: http://top.chinaz.com/hangye/index_yiliao_yaopin.html)
+2019-03-06 14:48:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yaopin_7.html> (referer: http://top.chinaz.com/hangye/index_yiliao_yaopin.html)
+2019-03-06 14:48:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_chuangye_2.html> (referer: http://top.chinaz.com/hangye/index_wangluo_chuangye.html)
+2019-03-06 14:48:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_wangluo_chuangye_3.html> (referer: http://top.chinaz.com/hangye/index_wangluo_chuangye.html)
+2019-03-06 14:48:47 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 18746,
+ 'downloader/request_count': 60,
+ 'downloader/request_method_count/GET': 60,
+ 'downloader/response_bytes': 974022,
+ 'downloader/response_count': 60,
+ 'downloader/response_status_count/200': 60,
+ 'dupefilter/filtered': 231,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2019, 3, 6, 6, 48, 47, 387115),
+ 'log_count/DEBUG': 62,
+ 'log_count/INFO': 8,
+ 'memusage/max': 51888128,
+ 'memusage/startup': 51884032,
+ 'request_depth_max': 4,
+ 'response_received_count': 60,
+ 'scheduler/dequeued': 60,
+ 'scheduler/dequeued/disk': 60,
+ 'scheduler/enqueued': 396,
+ 'scheduler/enqueued/disk': 396,
+ 'start_time': datetime.datetime(2019, 3, 6, 6, 48, 44, 429192)}
+2019-03-06 14:48:47 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2019-03-06 14:48:51 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: crawlSpiderUsed)
+2019-03-06 14:48:51 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 05:52:31) - [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Darwin-17.7.0-x86_64-i386-64bit
+2019-03-06 14:48:51 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'crawlSpiderUsed', 'COOKIES_ENABLED': False, 'LOG_FILE': 'chinaz.log', 'NEWSPIDER_MODULE': 'crawlSpiderUsed.spiders', 'SPIDER_MODULES': ['crawlSpiderUsed.spiders']}
+2019-03-06 14:48:51 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+2019-03-06 14:48:52 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'crawlSpiderUsed.middlewares.UserAgentDownloadMiddler',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-06 14:48:52 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-06 14:48:52 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-03-06 14:48:52 [scrapy.core.engine] INFO: Spider opened
+2019-03-06 14:48:52 [scrapy.core.scheduler] INFO: Resuming crawl (336 requests scheduled)
+2019-03-06 14:48:52 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-06 14:48:52 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_10.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_8.html)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_60.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_63.html)
+2019-03-06 14:48:52 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_9.html> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_58.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_63.html)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yaopin_9.html> (referer: http://top.chinaz.com/hangye/index_yiliao_yaopin_11.html)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_61.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_63.html)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_57.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_63.html)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_9.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_8.html)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_62.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_63.html)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_dianshi_10.html> (referer: http://top.chinaz.com/hangye/index_news_dianshi_12.html)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_55.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_63.html)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_dianshi_9.html> (referer: http://top.chinaz.com/hangye/index_news_dianshi_12.html)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_11.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_8.html)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yaopin_10.html> (referer: http://top.chinaz.com/hangye/index_yiliao_yaopin_11.html)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_56.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_63.html)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_59.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_63.html)
+2019-03-06 14:48:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_17.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti_21.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_13.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_10.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_19.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti_21.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_18.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti_21.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_16.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti_21.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_14.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti_21.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_12.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_10.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_54.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_57.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_15.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti_21.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong_13.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong_15.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong_10.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong_15.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong_11.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong_15.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong_9.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong_15.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong_12.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong_15.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_13.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti_21.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_10.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti_8.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_14.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_11.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_11.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti_8.html)
+2019-03-06 14:48:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_52.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_55.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_9.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti_8.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_53.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_55.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_16.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_13.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_dianshi_11.html> (referer: http://top.chinaz.com/hangye/index_news_dianshi_12.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_12.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti_14.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_zonghe_tuanti_20.html> (referer: http://top.chinaz.com/hangye/index_zonghe_tuanti_21.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_53.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_56.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_15.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_13.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong_14.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong_15.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_54.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_56.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_51.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_54.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_52.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_56.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_48.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_56.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_61.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_64.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_60.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_64.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_49.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_56.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_50.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_52.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_57.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_64.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_56.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_64.html)
+2019-03-06 14:48:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_58.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_64.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_17.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_14.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_19.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_16.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu_12.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu_8.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu_7.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_18.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_16.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_51.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_56.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu_5.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_59.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_64.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_49.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_52.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_50.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_56.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_63.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_64.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_46.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_48.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_45.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_48.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_55.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_56.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_48.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_51.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_47.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_48.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu_10.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu_12.html)
+2019-03-06 14:48:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu_6.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu_11.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu_12.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_22.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_19.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_20.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_17.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_54.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_57.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_47.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_50.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu_3.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_21.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_19.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_46.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_49.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu_2.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_53.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_56.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu_9.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu_12.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_287.html> (referer: http://top.chinaz.com/hangye/index_yule_289.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu_4.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_piaowu.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_285.html> (referer: http://top.chinaz.com/hangye/index_yule_289.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_42.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_45.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_286.html> (referer: http://top.chinaz.com/hangye/index_yule_289.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_43.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_46.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_284.html> (referer: http://top.chinaz.com/hangye/index_yule_289.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_52.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_55.html)
+2019-03-06 14:48:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_45.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_48.html)
+2019-03-06 14:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_282.html> (referer: http://top.chinaz.com/hangye/index_yule_289.html)
+2019-03-06 14:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_24.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_22.html)
+2019-03-06 14:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_23.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_22.html)
+2019-03-06 14:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_44.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_45.html)
+2019-03-06 14:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_51.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_54.html)
+2019-03-06 14:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_283.html> (referer: http://top.chinaz.com/hangye/index_yule_289.html)
+2019-03-06 14:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_11.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_8.html)
+2019-03-06 14:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_10.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_8.html)
+2019-03-06 14:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_9.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_8.html)
+2019-03-06 14:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_281.html> (referer: http://top.chinaz.com/hangye/index_yule_289.html)
+2019-03-06 14:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_50.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_53.html)
+2019-03-06 14:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_43.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_46.html)
+2019-03-06 14:48:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_40.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_42.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_25.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_22.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_8.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_39.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_42.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_38.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_5.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_280.html> (referer: http://top.chinaz.com/hangye/index_yule_282.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_279.html> (referer: http://top.chinaz.com/hangye/index_yule_282.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_6.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_7.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_48.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_51.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_14.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_11.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_13.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_11.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_44.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_47.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_42.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_45.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_27.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_24.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_12.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_11.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_278.html> (referer: http://top.chinaz.com/hangye/index_yule_281.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_26.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_24.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_47.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_50.html)
+2019-03-06 14:48:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_37.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_40.html)
+2019-03-06 14:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_36.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_39.html)
+2019-03-06 14:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_276.html> (referer: http://top.chinaz.com/hangye/index_yule_279.html)
+2019-03-06 14:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_11.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_8.html)
+2019-03-06 14:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_38.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_40.html)
+2019-03-06 14:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_41.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_43.html)
+2019-03-06 14:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_46.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_48.html)
+2019-03-06 14:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_45.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_48.html)
+2019-03-06 14:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_35.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_38.html)
+2019-03-06 14:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_29.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_27.html)
+2019-03-06 14:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_36.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_38.html)
+2019-03-06 14:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_39.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_42.html)
+2019-03-06 14:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_34.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_38.html)
+2019-03-06 14:48:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_15.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_14.html)
+2019-03-06 14:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_32.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_38.html)
+2019-03-06 14:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_275.html> (referer: http://top.chinaz.com/hangye/index_yule_278.html)
+2019-03-06 14:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_274.html> (referer: http://top.chinaz.com/hangye/index_yule_276.html)
+2019-03-06 14:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_35.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_37.html)
+2019-03-06 14:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_14.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_11.html)
+2019-03-06 14:49:00 [scrapy.crawler] INFO: Received SIG_UNBLOCK, shutting down gracefully. Send again to force 
+2019-03-06 14:49:00 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2019-03-06 14:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_42.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_45.html)
+2019-03-06 14:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_43.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_46.html)
+2019-03-06 14:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_41.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_42.html)
+2019-03-06 14:49:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_277.html> (referer: http://top.chinaz.com/hangye/index_yule_280.html)
+2019-03-06 14:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_16.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_14.html)
+2019-03-06 14:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_17.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_14.html)
+2019-03-06 14:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_32.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_29.html)
+2019-03-06 14:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_38.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_41.html)
+2019-03-06 14:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_30.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_27.html)
+2019-03-06 14:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_33.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_38.html)
+2019-03-06 14:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_29.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_32.html)
+2019-03-06 14:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_18.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_15.html)
+2019-03-06 14:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_37.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_39.html)
+2019-03-06 14:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_36.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_39.html)
+2019-03-06 14:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_31.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_29.html)
+2019-03-06 14:49:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_272.html> (referer: http://top.chinaz.com/hangye/index_yule_275.html)
+2019-03-06 14:49:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 52223,
+ 'downloader/request_count': 160,
+ 'downloader/request_method_count/GET': 160,
+ 'downloader/response_bytes': 2733872,
+ 'downloader/response_count': 160,
+ 'downloader/response_status_count/200': 160,
+ 'dupefilter/filtered': 1344,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2019, 3, 6, 6, 49, 1, 793909),
+ 'log_count/DEBUG': 162,
+ 'log_count/INFO': 9,
+ 'memusage/max': 51961856,
+ 'memusage/startup': 51957760,
+ 'request_depth_max': 12,
+ 'response_received_count': 160,
+ 'scheduler/dequeued': 160,
+ 'scheduler/dequeued/disk': 160,
+ 'scheduler/enqueued': 123,
+ 'scheduler/enqueued/disk': 123,
+ 'start_time': datetime.datetime(2019, 3, 6, 6, 48, 52, 33397)}
+2019-03-06 14:49:01 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2019-03-06 14:49:07 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: crawlSpiderUsed)
+2019-03-06 14:49:07 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 05:52:31) - [GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Darwin-17.7.0-x86_64-i386-64bit
+2019-03-06 14:49:07 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'crawlSpiderUsed', 'COOKIES_ENABLED': False, 'LOG_FILE': 'chinaz.log', 'NEWSPIDER_MODULE': 'crawlSpiderUsed.spiders', 'SPIDER_MODULES': ['crawlSpiderUsed.spiders']}
+2019-03-06 14:49:07 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.spiderstate.SpiderState']
+2019-03-06 14:49:07 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'crawlSpiderUsed.middlewares.UserAgentDownloadMiddler',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-03-06 14:49:07 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-03-06 14:49:07 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2019-03-06 14:49:07 [scrapy.core.engine] INFO: Spider opened
+2019-03-06 14:49:07 [scrapy.core.scheduler] INFO: Resuming crawl (299 requests scheduled)
+2019-03-06 14:49:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-03-06 14:49:07 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_28.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_29.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_27.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_29.html)
+2019-03-06 14:49:08 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_27.html> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_269.html> (referer: http://top.chinaz.com/hangye/index_yule_272.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_35.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_32.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_26.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_29.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_270.html> (referer: http://top.chinaz.com/hangye/index_yule_272.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_34.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_32.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_33.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_32.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_20.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_17.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_19.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_16.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_40.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_42.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_21.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_18.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_41.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_42.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_39.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_42.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_271.html> (referer: http://top.chinaz.com/hangye/index_yule_274.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_16.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_14.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_24.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_27.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_13.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_11.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_17.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_14.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_23.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_26.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_15.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_14.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_268.html> (referer: http://top.chinaz.com/hangye/index_yule_269.html)
+2019-03-06 14:49:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_25.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_28.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_267.html> (referer: http://top.chinaz.com/hangye/index_yule_269.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_12.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_11.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_273.html> (referer: http://top.chinaz.com/hangye/index_yule_276.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_32.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_35.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_266.html> (referer: http://top.chinaz.com/hangye/index_yule_269.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_37.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_40.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_33.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_36.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_34.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_37.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_23.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_20.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_22.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_24.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_36.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_39.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_24.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_21.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_38.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_40.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_21.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_24.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_19.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_16.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_22.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_20.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_31.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_38.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_37.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_38.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_263.html> (referer: http://top.chinaz.com/hangye/index_yule_266.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_30.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_38.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_44.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_47.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_10.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_8.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_265.html> (referer: http://top.chinaz.com/hangye/index_yule_268.html)
+2019-03-06 14:49:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_20.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_17.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_18.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_16.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_29.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_32.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_31.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_32.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_35.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_37.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_30.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_32.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_9.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo_8.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_264.html> (referer: http://top.chinaz.com/hangye/index_yule_267.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_34.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_37.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_49.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_52.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_27.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_24.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_25.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_23.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_40.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_43.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_26.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_23.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_4.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_28.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_25.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_33.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_36.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_3.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_262.html> (referer: http://top.chinaz.com/hangye/index_yule_263.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yaopin_4.html> (referer: http://top.chinaz.com/hangye/index_yiliao_yaopin.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_261.html> (referer: http://top.chinaz.com/hangye/index_yule_263.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yaopin_5.html> (referer: http://top.chinaz.com/hangye/index_yiliao_yaopin.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_xiaoshuo_2.html> (referer: http://top.chinaz.com/hangye/index_yule_xiaoshuo.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yaopin_3.html> (referer: http://top.chinaz.com/hangye/index_yiliao_yaopin.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_260.html> (referer: http://top.chinaz.com/hangye/index_yule_263.html)
+2019-03-06 14:49:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_32.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_35.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yiliao_yaopin_2.html> (referer: http://top.chinaz.com/hangye/index_yiliao_yaopin.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_2.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_lvxingshe_4.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_lvxingshe.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_31.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_34.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_lvxingshe_3.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_lvxingshe.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_gov_zhengfu_28.html> (referer: http://top.chinaz.com/hangye/index_gov_zhengfu_29.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiudian_6.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_jiudian.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiudian_5.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_jiudian.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_lvxingshe_2.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_lvxingshe.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiudian_4.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_jiudian.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiudian_3.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_jiudian.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_8.html> (referer: http://top.chinaz.com/hangye/index_news_baokan.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_30.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_33.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_259.html> (referer: http://top.chinaz.com/hangye/index_yule_262.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiudian_2.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_jiudian.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_32.html> (referer: http://top.chinaz.com/hangye/index_news_baokan.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_7.html> (referer: http://top.chinaz.com/hangye/index_news_baokan.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_258.html> (referer: http://top.chinaz.com/hangye/index_yule_261.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_257.html> (referer: http://top.chinaz.com/hangye/index_yule_260.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_6.html> (referer: http://top.chinaz.com/hangye/index_news_baokan.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_5.html> (referer: http://top.chinaz.com/hangye/index_news_baokan.html)
+2019-03-06 14:49:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_29.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_32.html)
+2019-03-06 14:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_4.html> (referer: http://top.chinaz.com/hangye/index_news_baokan.html)
+2019-03-06 14:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_28.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_31.html)
+2019-03-06 14:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_2.html> (referer: http://top.chinaz.com/hangye/index_news_baokan.html)
+2019-03-06 14:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_3.html> (referer: http://top.chinaz.com/hangye/index_news_baokan.html)
+2019-03-06 14:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_dianshi_6.html> (referer: http://top.chinaz.com/hangye/index_news_dianshi.html)
+2019-03-06 14:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_dianshi_7.html> (referer: http://top.chinaz.com/hangye/index_news_dianshi.html)
+2019-03-06 14:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_dianshi_3.html> (referer: http://top.chinaz.com/hangye/index_news_dianshi.html)
+2019-03-06 14:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_dianshi_4.html> (referer: http://top.chinaz.com/hangye/index_news_dianshi.html)
+2019-03-06 14:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_10.html> (referer: http://top.chinaz.com/hangye/index_news_baokan_8.html)
+2019-03-06 14:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_256.html> (referer: http://top.chinaz.com/hangye/index_yule_259.html)
+2019-03-06 14:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_11.html> (referer: http://top.chinaz.com/hangye/index_news_baokan_8.html)
+2019-03-06 14:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_dianshi_2.html> (referer: http://top.chinaz.com/hangye/index_news_dianshi.html)
+2019-03-06 14:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong_8.html> (referer: http://top.chinaz.com/hangye/index_jiaotonglvyou_jiaotong.html)
+2019-03-06 14:49:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_255.html> (referer: http://top.chinaz.com/hangye/index_yule_258.html)
+2019-03-06 14:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_31.html> (referer: http://top.chinaz.com/hangye/index_news_baokan_32.html)
+2019-03-06 14:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_26.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_29.html)
+2019-03-06 14:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_dianshi_5.html> (referer: http://top.chinaz.com/hangye/index_news_dianshi.html)
+2019-03-06 14:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_yule_254.html> (referer: http://top.chinaz.com/hangye/index_yule_257.html)
+2019-03-06 14:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_shopping_dianshang_25.html> (referer: http://top.chinaz.com/hangye/index_shopping_dianshang_28.html)
+2019-03-06 14:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_25.html> (referer: http://top.chinaz.com/hangye/index_news_baokan_32.html)
+2019-03-06 14:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_30.html> (referer: http://top.chinaz.com/hangye/index_news_baokan_32.html)
+2019-03-06 14:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_26.html> (referer: http://top.chinaz.com/hangye/index_news_baokan_32.html)
+2019-03-06 14:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_29.html> (referer: http://top.chinaz.com/hangye/index_news_baokan_32.html)
+2019-03-06 14:49:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.chinaz.com/hangye/index_news_baokan_24.html> (referer: http://top.chinaz.com/hangye/index_news_baokan_32.html)

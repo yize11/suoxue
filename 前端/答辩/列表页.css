@@ -1,0 +1,888 @@
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .header{
+            width: 1307px;
+            height: 152px;
+            background-color:#fff;
+        }
+        .header2{
+            width: 100%;
+            height: 36px;
+            background: #48484c;
+        }
+        .header2 ul{
+            list-style: none;
+        }
+        .header3{
+            width: 1000px;
+            height: 36px;
+            background: #48484c;
+            margin: 0 auto;
+        }
+        .c li{
+            float: left;
+            width: 111px;
+            position: relative;
+
+
+
+        }
+        .c li a{
+            border-bottom: 3px solid #489eff;
+            line-height: 33px;
+            height: 33px;
+            font-weight: 700;
+            background: #272729;
+            float: left;
+        }
+
+        .header3 li a{
+            font-family: "\5FAE\8F6F\96C5\9ED1";
+            display: block;
+            width: 111px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .b{
+            width: 1000px;
+            height: 80px;
+            background-color: #fff;
+            margin: auto;
+        }
+        .b1{
+            width:283px;
+            overflow:hidden;
+            height: 44px;
+            background: url("css.png/logo.png")no-repeat;
+            position: absolute;
+            margin:18px 0 0 10px;
+        }
+        .b2{
+            width: 534px;
+            height: 31px;
+            border: 2px solid #4d92e0;
+            overflow: hidden;
+            float: right;
+            margin-top:25px ;
+        }
+       li .b5{
+            width: 62px;
+            padding: 3px 0 6px;
+            background-color: #4190e9;
+            line-height:1.5 ;
+            color: #fff;
+            border: 0;
+           float: right;
+        }
+       li .b6{
+           width: 470px;
+           border: 1px solid #e0e0e0;
+           background: #fff;
+           line-height: 16px;
+           padding-top: 6px;
+           padding-bottom: 17px;
+           vertical-align: middle;
+           font-size: 100%;
+           outline: 0;
+           margin-top: 0;
+           margin-left: 0;
+       }
+        .header1{
+            width: 1000px;
+            height: 36px;
+            background-color:  #fff;
+            margin: auto;
+        }
+        .dnb{
+            float: left;
+            width: 87px;
+            height: 36px;
+            line-height: 36px;
+            color: #333333;
+            font-size: 12px;
+        }
+        .sjb{
+            height: 36px;
+            color: #333333;
+            text-decoration: none;
+        }
+         .dnb a:hover{
+            text-decoration: underline;
+            color: #ff8400;
+        }
+        .a1{
+            width: 457px;
+            height: 36px;
+            line-height: 36px;
+            float: right;
+        }
+        .a1 span{
+            font-size: 12px;
+        }
+        .a1 a{
+            font-size: 12px;
+            color: #333333;
+            text-decoration: none;
+        }
+        .a1 a:hover{
+            color: #ff8400;
+            text-decoration: underline;
+        }
+
+        /*********************************列表**********************************************/
+        .list{
+            width: 1000px;
+            height: 350px;
+            margin: auto;
+            clear: both;
+        }
+        .list{
+            border: 1px solid #d7d7d7;
+            background-color: #fff;
+            margin-bottom: 10px;
+            font: 12px/18px arial,"\5B8B\4F53";
+            color: #333;
+        }
+        .list .hd{
+            width: 998px;
+            height: 35px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #d7d7d7;
+            position: relative;
+        }
+        .hd h2{
+            font-size: 14px;
+            line-height: 34px;
+            text-indent: 9px;
+        }
+        .bd{
+            width: 998px;
+            height: 315px;
+        }
+        .bd1{
+            width: 998px;
+            height: 273px;
+        }
+        .list ul{
+            width: 978px;
+            padding: 23px 0 0 20px;
+            list-style: none;
+        }
+        .bd1 li{
+            float: left;
+            width: 246px;
+            height: 121px;
+        }
+        .list .pic{
+            width: 90px;
+            height: 95px;
+        }
+        .list .pic .space{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 90px;
+            height: 90px;
+            background: url("列表页.png/radius_90.png");
+        }
+        .list .name{
+            width: 140px;
+            height: 18px;
+            font-size: 14px;
+            float: left;
+            padding: 8px 0 0 10px;
+        }
+        .list .name a {
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #333;
+        }
+        .list .info{
+            width: 143px;
+            height: 58px;
+            padding: 6px 0 0;
+            display: inline;
+            float: left;
+            position: relative;
+            z-index: 1;
+            margin: -90px 10px 10px 90px;
+        }
+        .info1{
+            background-position: 0 -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info2{
+            background-position: -45px -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info3{
+            background-position: -90px -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info4{
+            background-position: -90px -885px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info5{
+            background-position: -45px -885px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .list ul{
+            width: 978px;
+            padding: 23px 0 0 20px;
+            list-style: none;
+        }
+        .bd1 li{
+            float: left;
+            width: 246px;
+            height: 121px;
+        }
+        .list .pic{
+            width: 90px;
+            height: 95px;
+        }
+        .list .pic .space{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 90px;
+            height: 90px;
+            background: url("列表页.png/radius_90.png");
+        }
+        .list .name{
+            width: 140px;
+            height: 18px;
+            font-size: 14px;
+            float: left;
+            padding: 8px 0 0 10px;
+        }
+        .list .name a {
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #333;
+        }
+        .list .info{
+            width: 143px;
+            height: 58px;
+            padding: 6px 0 0;
+            display: inline;
+            float: left;
+            position: relative;
+            z-index: 1;
+            margin: -90px 10px 10px 90px;
+        }
+        .info1{
+            background-position: 0 -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info2{
+            background-position: -45px -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info3{
+            background-position: -90px -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info4{
+            background-position: -90px -885px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info5{
+            background-position: -45px -885px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .list ul{
+            width: 978px;
+            padding: 23px 0 0 20px;
+            list-style: none;
+        }
+        .bd1 li{
+            float: left;
+            width: 246px;
+            height: 121px;
+        }
+        .list .pic{
+            width: 90px;
+            height: 95px;
+        }
+        .list .pic .space{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 90px;
+            height: 90px;
+            background: url("列表页.png/radius_90.png");
+        }
+        .list .name{
+            width: 140px;
+            height: 18px;
+            font-size: 14px;
+            float: left;
+            padding: 8px 0 0 10px;
+        }
+        .list .name a {
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #333;
+        }
+        .list .info{
+            width: 143px;
+            height: 58px;
+            padding: 6px 0 0;
+            display: inline;
+            float: left;
+            position: relative;
+            z-index: 1;
+            margin: -90px 10px 10px 90px;
+        }
+        .info1{
+            background-position: 0 -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info2{
+            background-position: -45px -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info3{
+            background-position: -90px -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info4{
+            background-position: -90px -885px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info5{
+            background-position: -45px -885px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .list ul{
+            width: 978px;
+            padding: 23px 0 0 20px;
+            list-style: none;
+        }
+        .bd1 li{
+            float: left;
+            width: 246px;
+            height: 121px;
+            margin: 3px 80px 0 0;
+        }
+        .list .pic{
+            width: 90px;
+            height: 95px;
+        }
+        .list .pic .space{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 90px;
+            height: 90px;
+            background: url("列表页.png/radius_90.png");
+        }
+        .list .name{
+            width: 140px;
+            height: 18px;
+            font-size: 14px;
+            float: left;
+            padding: 8px 0 0 10px;
+        }
+        .list .name a {
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #333;
+        }
+        .list .info{
+            width: 143px;
+            height: 58px;
+            padding: 6px 0 0;
+            display: inline;
+            float: left;
+            position: relative;
+            z-index: 1;
+            margin: -90px 10px 10px 90px;
+        }
+        .info1{
+            background-position: 0 -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info2{
+            background-position: -45px -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info3{
+            background-position: -90px -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info4{
+            background-position: -90px -885px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info5{
+            background-position: -45px -885px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .bd1 li{
+            float: left;
+            width: 246px;
+            height: 121px;
+            margin: 3px 80px 0 0;
+        }
+        .list .pic{
+            width: 90px;
+            height: 95px;
+        }
+        .list .pic .space{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 90px;
+            height: 90px;
+            background: url("列表页.png/radius_90.png");
+        }
+        .list .name{
+            width: 140px;
+            height: 18px;
+            font-size: 14px;
+            float: left;
+            padding: 8px 0 0 10px;
+        }
+        .list .name a {
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #333;
+        }
+        .list .info{
+            width: 143px;
+            height: 58px;
+            padding: 6px 0 0;
+            display: inline;
+            float: left;
+            position: relative;
+            z-index: 1;
+            margin: -90px 10px 10px 90px;
+        }
+        .info1{
+            background-position: 0 -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info2{
+            background-position: -45px -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info3{
+            background-position: -90px -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info4{
+            background-position: -90px -885px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info5{
+            background-position: -45px -885px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .bd1 li{
+            float: left;
+            width: 246px;
+            height: 121px;
+            margin: 3px 80px 0 0;
+        }
+        .list .pic{
+            width: 90px;
+            height: 95px;
+        }
+        .list .pic .space{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 90px;
+            height: 90px;
+            background: url("列表页.png/radius_90.png");
+        }
+        .list .name{
+            width: 140px;
+            height: 18px;
+            font-size: 14px;
+            float: left;
+            padding: 8px 0 0 10px;
+        }
+        .list .name a {
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #333;
+        }
+        .list .info{
+            width: 143px;
+            height: 58px;
+            padding: 6px 0 0;
+            display: inline;
+            float: left;
+            position: relative;
+            z-index: 1;
+            margin: -90px 10px 10px 90px;
+        }
+        .info1{
+            background-position: 0 -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info2{
+            background-position: -45px -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info3{
+            background-position: -90px -111px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info4{
+            background-position: -90px -885px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+        .info5{
+            background-position: -45px -885px;
+            width: 44px;
+            height: 24px;
+            display: block;
+            float: left;
+            margin: 0 2px 5px 0;
+            overflow: hidden;
+            line-height: 200px;
+            background-image: url("列表页.png/bg_sprites.png");
+            text-align: center;
+        }
+
+        .i{
+            width: 960px;
+            height: 42px;
+        }
+        .l{
+            width: 550px;
+            margin: 25px auto;
+
+        }
+        .i .l li a{
+            float: left;
+            display: block;
+            text-decoration: none;
+            font: 12px '雅黑';
+            color: black;
+            padding: 5px 10px;
+            margin-left: 10px;
+            background: rgb(254,256,224);
+            margin-top: -10px;
+        }
+        /*××××××××××××××××××××××××页脚××××××××××××××××××××××××××××××*/
+        .footer-wrap{
+            width: 1307px;
+            height: 220px;
+            clear: both;
+            background: #48484c;
+            margin-top: 55px;
+        }
+        .footer{
+            width: 1000px;
+            height: 168px;
+            margin: 0 auto;
+            background: #48484c;
+            padding-top: 35px;
+        }
+        .footer .footer-link{
+            width: 1000px;
+            height: 116px;
+            overflow: hidden;
+        }
+        .footer .footer-link ul{
+            width: 1200px;
+            height: 0;
+            list-style: none;
+        }
+        .footer .footer-link li{
+            width: 185px;
+            float: left;
+            margin-left: 30px;
+            display: inline;
+        }
+        .footer .footer-link li strong{
+            width: 185px;
+            height: 35px;
+            display: block;
+            font-size: 14px;
+            line-height: 23px;
+            color: #fff;
+        }
+        .footer .footer-link li a{
+            color: #b3b3b4;
+            line-height: 24px;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .footer .footer-link li a:hover{
+            text-decoration: none;
+            color: #fff;
+
+        }
+        .footer .company-info{
+            width: 1000px;
+            height: 28px;
+            text-align: center;
+            clear: both;
+            padding: 24px 0 17px;
+            color: #b3b3b4;
+        }
+        .footer .company-info p{
+            padding-bottom: 10px;
+            font-size: 12px;
+            font-family: 'Microsoft Yahei';
+
+        }
+        .footer .company-info a{
+            color: #b3b3b4;
+            text-decoration: none;
+        }
